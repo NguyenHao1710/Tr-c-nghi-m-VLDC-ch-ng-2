@@ -141,11 +141,11 @@
 
 <div class="container">
     <h1>VẬT LÝ ĐẠI CƯƠNG 1 - CƠ NHIỆT</h1>
-    <div class="subtitle">Chương 2: Động Lực Học Chất Điểm (50 Câu - Giải Chi Tiết)</div>
+    <div class="subtitle">Chương 2: Động Lực Học Chất Điểm (96 Câu - Đầy đủ đáp án & Lời giải)</div>
 
     <div id="quiz-screen">
         <div class="quiz-controls">
-            <span id="question-counter">Câu 1 / 50</span>
+            <span id="question-counter">Câu 1 / 96</span>
             <span id="score-tracker">Điểm: 0</span>
         </div>
 
@@ -175,554 +175,1064 @@
 <script>
     const quizData = [
         {
-            q: "Câu 1. Theo định luật I Newton, một vật sẽ giữ nguyên trạng thái đứng yên hoặc chuyển động thẳng đều khi:",
+            q: "Câu 1. Một vật đang chuyển động sang phải. Tại một thời điểm, hợp lực tác dụng lên vật hướng sang trái. Khẳng định nào luôn đúng?",
             options: [
-                "không có lực nào tác dụng lên vật hoặc hợp lực tác dụng lên vật bằng 0.",
-                "lực tác dụng lên vật có độ lớn không đổi.",
-                "vật có khối lượng rất lớn.",
-                "vật chuyển động trong môi trường có ma sát nhỏ."
-            ],
-            correct: 0,
-            explain: "Định luật I Newton (Định luật quán tính) phát biểu rằng nếu một vật cô lập (không chịu tác dụng của lực nào hoặc hợp lực bằng 0) thì vật đang đứng yên sẽ tiếp tục đứng yên, đang chuyển động sẽ tiếp tục chuyển động thẳng đều."
-        },
-        {
-            q: "Câu 2. Đại lượng nào sau đây đặc trưng cho mức quán tính của một vật trong chuyển động tịnh tiến?",
-            options: [
-                "Vận tốc.",
-                "Gia tốc.",
-                "Khối lượng.",
-                "Trọng lực."
+                "Vật đang chuyển động sang trái.",
+                "Vật lập tức đổi chiều.",
+                "Gia tốc của vật hướng sang trái.",
+                "Tốc độ của vật luôn giảm."
             ],
             correct: 2,
-            explain: "Khối lượng là đại lượng vật lý đặc trưng cho mức quán tính của vật. Khối lượng càng lớn thì vật càng khó thay đổi trạng thái vận tốc."
+            explain: "Theo định luật II Newton, gia tốc a = F/m luôn cùng hướng với hợp lực F. Hợp lực hướng sang trái thì gia tốc chắc chắn hướng sang trái."
         },
         {
-            q: "Câu 3. Phát biểu nào sau đây đúng về cặp lực và phản lực trong Định luật III Newton?",
+            q: "Câu 2. Một quyển sách nằm yên trên mặt bàn. Trọng lực tác dụng lên sách và phản lực của bàn tác dụng lên sách",
             options: [
-                "Lực và phản lực cùng tác dụng vào một vật nên cân bằng nhau.",
-                "Lực và phản lực xuất hiện cùng lúc, cùng phương, ngược chiều và tác dụng vào hai vật khác nhau.",
-                "Lực xuất hiện trước, phản lực xuất hiện sau.",
-                "Lực và phản lực luôn có độ lớn khác nhau tùy thuộc vào khối lượng hai vật."
-            ],
-            correct: 1,
-            explain: "Theo định luật III Newton, hai chất điểm tương tác với nhau bằng những lực trực đối: cùng phương, ngược chiều, cùng độ lớn nhưng đặt vào hai vật khác nhau nên không triệt tiêu nhau."
-        },
-        {
-            q: "Câu 4. Một vật khối lượng m trượt xuống một mặt phẳng nghiêng góc α so với phương ngang. Bỏ qua ma sát. Gia tốc của vật là:",
-            options: [
-                "a = g * sin(α).",
-                "a = g * cos(α).",
-                "a = g * tan(α).",
-                "a = g."
-            ],
-            correct: 0,
-            explain: "Thành phần trọng lực song song với mặt phẳng nghiêng kéo vật trượt xuống là P_x = m*g*sin(α). Theo định luật II Newton: a = P_x / m = g*sin(α)."
-        },
-        {
-            q: "Câu 5. Lực ma sát trượt tác dụng lên vật trượt trên mặt phẳng ngang tỉ lệ thuận với đại lượng nào?",
-            options: [
-                "Vận tốc của vật.",
-                "Diện tích tiếp xúc.",
-                "Độ lớn áp lực (phản lực pháp tuyến) giữa hai bề mặt tiếp xúc.",
-                "Thời gian trượt."
+                "là cặp lực và phản lực theo định luật III Newton.",
+                "có cùng độ lớn vì là cặp lực và phản lực.",
+                "cùng tác dụng lên một vật nên không phải cặp lực và phản lực.",
+                "không thể có cùng độ lớn."
             ],
             correct: 2,
-            explain: "Công thức lực ma sát trượt: F_mst = μ * N. Tỷ lệ thuận với phản lực pháp tuyến N và không phụ thuộc vào diện tích tiếp xúc."
+            explain: "Lực và phản lực theo Định luật III Newton phải đặt vào hai vật khác nhau. Trọng lực và phản lực của bàn cùng đặt vào quyển sách nên đây là hai lực cân bằng, không phải lực và phản lực."
         },
         {
-            q: "Câu 6. Khi xe ô tô rẽ ngoặt sang trái, hành khách trên xe có xu hướng nghiêng sang phải. Hiện tượng này giải thích do:",
+            q: "Câu 3. Khi một người đẩy vào tường, tường tác dụng trở lại người một lực",
             options: [
-                "lực hấp dẫn của Trái Đất.",
-                "quán tính của cơ thể giữ hướng chuyển động cũ.",
-                "lực ma sát giữa người và ghế.",
-                "lực hướng tâm kéo người sang phải."
-            ],
-            correct: 1,
-            explain: "Do quán tính, cơ thể có xu hướng duy trì hướng chuyển động thẳng ban đầu. Khi xe chuyển hướng sang trái, người tiếp tục quán tính đi thẳng nên nghiêng sang phải so với xe."
-        },
-        {
-            q: "Câu 7. Độ biến thiên động lượng Δp của một chất điểm trong khoảng thời gian Δt bằng đại lượng nào sau đây?",
-            options: [
-                "Công của lực tác dụng.",
-                "Xung lượng của hợp lực tác dụng lên chất điểm trong khoảng thời gian đó (F * Δt).",
-                "Gia tốc của chất điểm.",
-                "Thế năng của chất điểm."
-            ],
-            correct: 1,
-            explain: "Theo dạng tổng quát của định luật II Newton: dp/dt = F => Δp = F * Δt (Độ biến thiên động lượng bằng xung lượng của lực)."
-        },
-        {
-            q: "Câu 8. Một con lắc đơn chuyển động qua vị trí cân bằng (vị trí thấp nhất). Lực căng dây T tại vị trí này có đặc điểm gì?",
-            options: [
-                "T = m*g.",
-                "T < m*g.",
-                "T > m*g.",
-                "T = 0."
-            ],
-            correct: 2,
-            explain: "Tại vị trí cân bằng, hợp lực hướng vào tâm quỹ đạo: T - P = m*v²/l => T = m*g + m*v²/l > m*g."
-        },
-        {
-            q: "Câu 9. Hệ quy chiếu nào sau đây là hệ quy chiếu quán tính?",
-            options: [
-                "Hệ quy chiếu chuyển động quay đều.",
-                "Hệ quy chiếu gắn với một vật chuyển động thẳng đều hoặc đứng yên so với hệ quy chiếu quán tính khác.",
-                "Hệ quy chiếu chuyển động nhanh dần đều.",
-                "Hệ quy chiếu gắn với cabin thang máy rơi tự do."
-            ],
-            correct: 1,
-            explain: "Hệ quy chiếu quán tính là hệ quy chiếu mà trong đó các định luật Newton (đặc biệt là định luật I) nghiệm đúng, tức là đứng yên hoặc chuyển động thẳng đều so với hệ quán tính gốc."
-        },
-        {
-            q: "Câu 10. Trong hệ quy chiếu phi quán tính chuyển động với gia tốc a_0, lực quán tính F_qt tác dụng lên chất điểm khối lượng m có công thức:",
-            options: [
-                "F_qt = m * a_0.",
-                "F_qt = -m * a_0.",
-                "F_qt = m * g.",
-                "F_qt = -m * g."
-            ],
-            correct: 1,
-            explain: "Lực quán tính xuất hiện trong hệ quy chiếu phi quán tính luôn ngược chiều với gia tốc a_0 của hệ quy chiếu và có giá trị F_qt = -m * a_0."
-        },
-        {
-            q: "Câu 11. Biểu thức toán học đầy đủ của định luật II Newton dưới dạng vi phân liên quan đến động lượng p là:",
-            options: [
-                "F = m * a.",
-                "F = dp / dt.",
-                "F = m * dv / dt.",
-                "Cả 3 phương án đều đúng."
+                "chỉ xuất hiện nếu tường chuyển động.",
+                "nhỏ hơn lực người tác dụng lên tường.",
+                "lớn hơn lực người tác dụng lên tường.",
+                "bằng về độ lớn và ngược hướng với lực người tác dụng lên tường."
             ],
             correct: 3,
-            explain: "Viết dưới dạng vector/vi phân: F = dp/dt = d(m*v)/dt. Khi khối lượng m không đổi thì F = m*(dv/dt) = m*a."
+            explain: "Theo Định luật III Newton, hai lực tương tác giữa hai vật luôn cùng độ lớn và ngược hướng."
         },
         {
-            q: "Câu 12. Bản chất của lực hướng tâm trong chuyển động tròn đều là:",
+            q: "Câu 4. Một vật chuyển động thẳng với vận tốc không đổi. Điều nào sau đây đúng?",
             options: [
-                "một loại lực cơ học mới phát sinh khi quay.",
-                "hợp lực của các lực thực tế tác dụng lên vật có phương hướng vào tâm quỹ đạo.",
-                "lực đẩy ly tâm từ tâm quay ra.",
-                "luôn luôn là lực ma sát."
+                "Không có lực nào tác dụng lên vật.",
+                "Hợp lực tác dụng lên vật bằng 0.",
+                "Chỉ có trọng lực tác dụng lên vật.",
+                "Gia tốc của vật có thể khác 0."
             ],
             correct: 1,
-            explain: "Lực hướng tâm không phải lực mới, nó là hợp lực tác dụng lên vật có phương vuông góc với vận tốc và hướng về tâm quỹ đạo."
+            explain: "Theo Định luật I Newton, vật chuyển động thẳng đều (vận tốc không đổi) thì gia tốc a = 0, suy ra hợp lực tác dụng lên vật phải bằng 0."
         },
         {
-            q: "Câu 13. Treo một vật m vào lực kế trong thang máy. Khi thang máy đi lên nhanh dần đều với gia tốc a, số chỉ của lực kế sẽ:",
+            q: "Câu 5. Một ô tô rẽ trên đường nằm ngang. Lực đóng vai trò quan trọng tạo gia tốc hướng tâm cho ô tô là",
             options: [
-                "Bằng trọng lượng m*g.",
-                "Lớn hơn m*g.",
-                "Nhỏ hơn m*g.",
-                "Bằng 0."
-            ],
-            correct: 1,
-            explain: "Lực kế chỉ độ lớn lực căng F = m*(g + a) > m*g do xuất hiện thêm lực quán tính F_qt = m*a hướng xuống."
-        },
-        {
-            q: "Câu 14. Lực hấp dẫn giữa hai chất điểm m1 và m2 cách nhau một khoảng r tuân theo biểu thức:",
-            options: [
-                "F = G * (m1 + m2) / r².",
-                "F = G * (m1 * m2) / r.",
-                "F = G * (m1 * m2) / r².",
-                "F = G * r² / (m1 * m2)."
+                "trọng lực.",
+                "phản lực của mặt đường.",
+                "lực ma sát giữa lốp và mặt đường.",
+                "lực quán tính ly tâm."
             ],
             correct: 2,
-            explain: "Định luật vạn vật hấp dẫn: F_hd = G * (m1 * m2) / r², trong đó G = 6.67 x 10^-11 N.m²/kg²."
+            explain: "Khi ô tô rẽ trên đường nằm ngang, lực ma sát nghỉ giữa lốp xe và mặt đường đóng vai trò làm lực hướng tâm giữ cho xe không bị trượt ra ngoài."
         },
         {
-            q: "Câu 15. Hệ số ma sát trượt μ giữa vật và mặt phẳng tiếp xúc:",
+            q: "Câu 6. Ô tô phanh gấp, người ngồi trong xe có xu hướng chúi về phía trước. Giải thích phù hợp nhất là.",
             options: [
-                "phụ thuộc vào diện tích mặt tiếp xúc.",
-                "phụ thuộc vào tốc độ trượt.",
-                "phụ thuộc vào vật liệu và tình trạng bề mặt tiếp xúc.",
-                "tăng khi khối lượng vật tăng."
+                "Có một lực mới đẩy người về phía trước.",
+                "Cơ thể có xu hướng duy trì trạng thái chuyển động ban đầu.",
+                "Trọng lực đột ngột tăng.",
+                "Phản lực của ghế đổi hướng về phía trước."
+            ],
+            correct: 1,
+            explain: "Đây là hiện tượng quán tính: cơ thể người có tính chất giữ nguyên vận tốc ban đầu khi xe đột ngột giảm tốc."
+        },
+        {
+            q: "Câu 7. Hãy chọn câu đúng. Quán tính của một vật là.",
+            options: [
+                "Tính chất của 1 vật có xu hướng bảo toàn vận tốc.",
+                "Tính chất của 1 vật có xu hướng bảo toàn khối lượng.",
+                "Tính chất của 1 vật có xu hướng bảo toàn vận tốc và khối lượng.",
+                "Tính chất của 1 vật có xu hướng chuyển động theo đường thẳng."
+            ],
+            correct: 0,
+            explain: "Quán tính là tính chất của mọi vật có xu hướng bảo toàn vận tốc cả về độ lớn lẫn hướng."
+        },
+        {
+            q: "Câu 8. Hiện tượng nào xảy ra không do quán tính.",
+            options: [
+                "Bụi rơi ra khỏi áo khi ta giũ mạnh áo.",
+                "Vận động viên dậm đà trước khi nhảy cao.",
+                "Lưỡi búa được tra vào cán khi gõ búa xuống nền.",
+                "Khi xe chạy, hành khách ngồi trên xe nghiêng sang trái khi xe rẽ sang phải."
+            ],
+            correct: 1,
+            explain: "Vận động viên dậm đà nhằm mục đích chuyển hóa động năng tịnh tiến nằm ngang thành động năng bay lên cao, không phải là hiện tượng giữ nguyên vận tốc theo quán tính thụ động."
+        },
+        {
+            q: "Câu 9. Chọn câu sai.",
+            options: [
+                "Lực là nguyên nhân gây ra gia tốc.",
+                "Lực là nguyên nhân gây ra vận tốc.",
+                "Lực là nguyên nhân làm biến đổi vận tốc.",
+                "Lực là nguyên nhân làm biến dạng vật."
+            ],
+            correct: 1,
+            explain: "Lực không phải là nguyên nhân gây ra vận tốc (vật không chịu lực vẫn có thể chuyển động thẳng đều với vận tốc không đổi), lực chỉ gây ra gia tốc làm biến đổi vận tốc."
+        },
+        {
+            q: "Câu 10. Một ô tô đi qua đỉnh đoạn đường cong lồi với tốc độ khác 0. Coi đoạn đường tại đỉnh là một cung tròn; xe vẫn tiếp xúc với đường. So với trọng lượng mg, độ lớn phản lực của đường lên xe tại đỉnh.",
+            options: [
+                "Lớn hơn mg",
+                "Bằng mg",
+                "Nhỏ hơn mg",
+                "Bằng 0 ở mọi tốc độ"
             ],
             correct: 2,
-            explain: "Hệ số ma sát trượt μ là đại lượng không thứ nguyên, chỉ phụ thuộc vào bản chất vật liệu và cấu trúc bề mặt của hai vật tiếp xúc."
+            explain: "Tại đỉnh đường cong lồi: P - N = m*v²/R => N = mg - m*v²/R < mg."
         },
         {
-            q: "Câu 16. Chuyển động của chất điểm chỉ dưới tác dụng của trọng lực P (bỏ qua mọi sức cản) gọi là:",
+            q: "Câu 11. Theo định luật II Newton, gia tốc của một vật.",
             options: [
-                "chuyển động thẳng đều.",
-                "chuyển động trong trường hấp dẫn (rơi tự do/ném).",
-                "chuyển động tròn đều.",
-                "chuyển động tuần hoàn."
+                "Luôn cùng hướng với vận tốc của vật.",
+                "Luôn cùng hướng với hợp lực tác dụng lên vật.",
+                "Luôn ngược hướng với hợp lực tác dụng lên vật.",
+                "Không phụ thuộc vào khối lượng của vật."
             ],
             correct: 1,
-            explain: "Chất điểm chuyển động dưới tác dụng duy nhất của trọng lực P = m*g có gia tốc luôn bằng g, gọi là chuyển động tự do/ném trong trường hấp dẫn."
+            explain: "Vector gia tốc a = F/m luôn cùng hướng với vector hợp lực F."
         },
         {
-            q: "Câu 17. Trong hệ SI, đơn vị Newton (N) biểu diễn qua các đơn vị cơ bản là:",
+            q: "Câu 12. Phát biểu nào sau đây đúng về lực ma sát trượt?",
             options: [
-                "kg * m / s.",
-                "kg * m / s².",
-                "kg * m² / s.",
-                "kg / (m * s²)."
+                "Luôn cùng hướng với vận tốc của vật.",
+                "Luôn vuông góc với mặt tiếp xúc.",
+                "Có phương song song với mặt tiếp xúc và ngược chiều chuyển động tương đối.",
+                "Luôn có độ lớn bằng trọng lực của vật."
+            ],
+            correct: 2,
+            explain: "Lực ma sát trượt xuất hiện tại mặt tiếp xúc, có phương song song với mặt tiếp xúc và ngược chiều với chuyển động tương đối."
+        },
+        {
+            q: "Câu 13. Khi hợp lực tác dụng lên một vật tăng lên 2 lần, trong khi khối lượng của vật không đổi, gia tốc của vật sẽ.",
+            options: [
+                "Giảm 2 lần.",
+                "Không thay đổi.",
+                "Tăng lên 2 lần.",
+                "Tăng lên 4 lần."
+            ],
+            correct: 2,
+            explain: "Theo công thức a = F/m, khi m không đổi và F tăng 2 lần thì gia tốc a tăng lên 2 lần."
+        },
+        {
+            q: "Câu 14. Phát biểu nào sau đây là sai khi nói về lực và phản lực trong Định luật III Newton?",
+            options: [
+                "Lực và phản lực luôn xuất hiện và mất đi đồng thời.",
+                "Lực và phản lực là hai lực trực đối, có cùng giá, cùng độ lớn nhưng ngược chiều.",
+                "Lực và phản lực cân bằng nhau vì chúng có cùng độ lớn và ngược chiều.",
+                "Lực và phản lực là hai lực cùng loại (ví dụ cùng là lực đàn hồi hoặc cùng là lực hấp dẫn)."
+            ],
+            correct: 2,
+            explain: "Lực và phản lực không cân bằng nhau vì chúng đặt vào hai vật khác nhau."
+        },
+        {
+            q: "Câu 15. Phát biểu nào sau đây là đúng khi nói về lực ma sát trượt?",
+            options: [
+                "Lực ma sát trượt luôn tỉ lệ thuận với diện tích tiếp xúc của vật.",
+                "Độ lớn của lực ma sát trượt phụ thuộc vào vận tốc của vật.",
+                "Lực ma sát trượt có hướng ngược với hướng chuyển động tương đối của vật đối với bề mặt tiếp xúc.",
+                "Lực ma sát trượt xuất hiện khi vật có xu hướng chuyển động nhưng chưa chuyển động."
+            ],
+            correct: 2,
+            explain: "Lực ma sát trượt luôn ngược hướng với vận tốc tương đối của vật đối với bề mặt tiếp xúc."
+        },
+        {
+            q: "Câu 16. Một ô tô đang chuyển động thẳng trên đường nằm ngang với tốc độ không đổi. Kết luận nào phù hợp nhất?",
+            options: [
+                "Động cơ không tạo lực kéo.",
+                "Không có lực nào tác dụng lên ô tô.",
+                "Tổng các lực cản cân bằng với lực kéo theo phương chuyển động.",
+                "Lực kéo và trọng lực cân bằng nhau."
+            ],
+            correct: 2,
+            explain: "Xe chuyển động thẳng đều nên hợp lực theo phương ngang bằng 0, nghĩa là lực kéo phát động cân bằng với tổng các lực cản."
+        },
+        {
+            q: "Câu 17. Một người đứng trên cân trong một cabin rơi tự do. Bỏ qua sức cản không khí. Trong quá trình rơi, số chỉ của cân bằng 0 vì",
+            options: [
+                "trọng lực tác dụng lên người bằng 0.",
+                "khối lượng của người tạm thời bằng 0.",
+                "trọng lực bị lực quán tính triệt tiêu nên không còn tác dụng lên người.",
+                "người và cân cùng rơi với gia tốc g, nên phản lực của cân tác dụng lên người bằng 0."
+            ],
+            correct: 3,
+            explain: "Cả người và cân cùng rơi tự do với gia tốc g nên không có sự nén giữa người và cân, phản lực N = 0 (trạng thái mất trọng lượng)."
+        },
+        {
+            q: "Câu 18. Một vật trượt xuống một mặt phẳng nghiêng có ma sát. So với trường hợp mặt phẳng nghiêng không có ma sát nhưng có cùng góc nghiêng, vật sẽ",
+            options: [
+                "có gia tốc lớn hơn.",
+                "có gia tốc nhỏ hơn.",
+                "có cùng gia tốc.",
+                "có gia tốc bằng 0."
             ],
             correct: 1,
-            explain: "Từ công thức F = m*a, 1 N = 1 kg * 1 m/s² = 1 kg.m.s^-2."
+            explain: "Khi có ma sát, gia tốc a = g*sinα - μ*g*cosα, nhỏ hơn trường hợp không có ma sát (a = g*sinα)."
         },
         {
-            q: "Câu 18. Vật m trượt trên mặt phẳng ngang có hệ số ma sát μ. Gia tốc hãm của vật có độ lớn là:",
+            q: "Câu 19. Một người kéo nhanh một tờ giấy nằm dưới một đồng xu. Nếu tờ giấy được kéo đủ nhanh, đồng xu gần như vẫn ở vị trí cũ rồi rơi xuống. Nguyên nhân chủ yếu là",
             options: [
-                "a = g.",
-                "a = μ * g.",
-                "a = g / μ.",
-                "a = μ / g."
+                "Đồng xu không chịu tác dụng của lực nào.",
+                "Trọng lực giữ đồng xu đứng yên.",
+                "Quán tính của đồng xu và xung lượng của lực ma sát tác dụng lên đồng xu nhỏ.",
+                "Lực ma sát giữa giấy và đồng xu bằng 0."
+            ],
+            correct: 2,
+            explain: "Thời gian kéo ngắn làm xung lượng lực ma sát F*Δt rất nhỏ, kết hợp với quán tính giữ đồng xu hầu như không kịp dịch chuyển theo phương ngang."
+        },
+        {
+            q: "Câu 20. Một người dùng dây kéo một thùng hàng trên sàn ngang. Thùng chuyển động thẳng với tốc độ không đổi. Phát biểu nào đúng?",
+            options: [
+                "Không có lực ma sát tác dụng lên thùng.",
+                "Hợp lực tác dụng lên thùng cùng hướng chuyển động.",
+                "Hợp lực tác dụng lên thùng bằng 0 mặc dù có nhiều lực tác dụng lên nó.",
+                "Lực kéo phải lớn hơn lực ma sát để duy trì chuyển động."
+            ],
+            correct: 2,
+            explain: "Chuyển động thẳng với tốc độ không đổi là chuyển động thẳng đều, theo Định luật I Newton thì hợp lực tác dụng lên thùng bằng 0."
+        },
+        {
+            q: "Câu 21. Một vật đang chuyển động thẳng với vận tốc không đổi trên mặt phẳng ngang. Nếu hợp lực tác dụng lên vật bằng 0, điều nào sau đây đúng?",
+            options: [
+                "Vật phải đứng yên.",
+                "Vật vẫn chuyển động thẳng đều.",
+                "Vật chắc chắn chuyển động nhanh dần.",
+                "Không thể xác định trạng thái chuyển động của vật."
             ],
             correct: 1,
-            explain: "F_ms = μ*N = μ*m*g. Theo định luật II Newton: a = F_ms / m = μ*g."
+            explain: "Vật đang chuyển động mà hợp lực bằng 0 thì tiếp tục chuyển động thẳng đều theo quán tính."
         },
         {
-            q: "Câu 19. Khi xe ô tô qua đoạn đường cua bằng phẳng, lực nào giữ vai trò là lực hướng tâm giúp xe không bị văng ra khỏi đường?",
+            q: "Câu 22. Hai vật A và B chịu tác dụng của cùng một lực không đổi. Khối lượng của A lớn hơn khối lượng của B. Bỏ qua các lực khác, phát biểu nào sau đây đúng?",
             options: [
+                "Hai vật có cùng gia tốc vì chịu cùng một lực.",
+                "Vật A có gia tốc lớn hơn vật B.",
+                "Vật B có gia tốc lớn hơn vật A.",
+                "Gia tốc của hai vật đều bằng 0 vì lực tác dụng không đổi."
+            ],
+            correct: 2,
+            explain: "a = F/m. Vì khối lượng B nhỏ hơn A (mB < mA) nên gia tốc vật B lớn hơn gia tốc vật A."
+        },
+        {
+            q: "Câu 23. Một người đứng trên mặt đất. Trọng lực do Trái Đất tác dụng lên người và lực hấp dẫn do người tác dụng lên Trái Đất là một cặp lực theo định luật III Newton. Phát biểu nào sau đây đúng?",
+            options: [
+                "Hai lực có độ lớn bằng nhau, cùng chiều và tác dụng lên cùng một vật.",
+                "Hai lực có độ lớn bằng nhau, ngược chiều và tác dụng lên hai vật khác nhau.",
+                "Hai lực có độ lớn khác nhau vì khối lượng của người và Trái Đất khác nhau.",
+                "Hai lực triệt tiêu nhau vì chúng là hai lực cân bằng."
+            ],
+            correct: 1,
+            explain: "Theo Định luật III Newton, cặp lực và phản lực luôn cùng độ lớn, ngược chiều và đặt vào hai vật tương tác khác nhau."
+        },
+        {
+            q: "Câu 24. Một quyển sách đang nằm yên trên mặt bàn. Phản lực của trọng lực tác dụng lên quyển sách là lực nào sau đây?",
+            options: [
+                "Lực do mặt bàn tác dụng lên quyển sách.",
+                "Lực do quyển sách tác dụng lên mặt bàn.",
+                "Lực do quyển sách tác dụng lên Trái Đất.",
+                "Lực ma sát giữa quyển sách và mặt bàn."
+            ],
+            correct: 2,
+            explain: "Trọng lực là lực Trái Đất hút quyển sách, phản lực của nó theo Định luật III Newton phải là lực quyển sách hút Trái Đất."
+        },
+        {
+            q: "Câu 25. Một quyển sách nằm yên trên mặt bàn. Lực hấp dẫn của Trái Đất tác dụng lên sách và lực pháp tuyến của bàn tác dụng lên sách có phải là một cặp lực và phản lực theo định luật III Newton không?",
+            options: [
+                "Có, vì chúng có cùng độ lớn và ngược chiều.",
+                "Có, vì chúng cùng tác dụng lên quyển sách.",
+                "Không, vì chúng tác dụng lên cùng một vật và là hai lực cân bằng.",
+                "Không, vì hai lực này luôn có độ lớn khác nhau."
+            ],
+            correct: 2,
+            explain: "Hai lực này cùng đặt vào một vật (quyển sách) nên chúng là hai lực cân bằng, không phải cặp lực - phản lực theo Định luật III Newton."
+        },
+        {
+            q: "Câu 26. Một người bắt đầu bước đi và tăng tốc trên mặt đường. Nguyên nhân làm người đó tăng tốc là",
+            options: [
+                "lực người đạp vào mặt đất lớn hơn lực mặt đất tác dụng lại người.",
+                "nội lực của cơ bắp trực tiếp làm khối tâm của người tăng tốc.",
+                "lực do mặt đất tác dụng lên người khi chân người tác dụng lực lên mặt đất.",
+                "trọng lực tác dụng lên người."
+            ],
+            correct: 2,
+            explain: "Khi bước đi, chân đạp về phía sau đẩy vào mặt đất, mặt đất tác dụng phản lực ma sát nghỉ hướng về phía trước lên chân làm người tăng tốc."
+        },
+        {
+            q: "Câu 27. Cánh quạt trực thăng đẩy không khí xuống dưới. Lực nào trực tiếp làm trực thăng được nâng lên?",
+            options: [
+                "Lực không khí đẩy ngược lên cánh quạt, vì đây là ngoại lực tác dụng lên trực thăng.",
+                "Lực cánh quạt đẩy không khí xuống, vì đây là lực do trực thăng sinh ra.",
+                "Lực của động cơ tác dụng lên cánh quạt, vì đây là nội lực của trực thăng.",
+                "Trọng lực của khối không khí bên dưới trực thăng."
+            ],
+            correct: 0,
+            explain: "Theo Định luật III Newton, khi cánh quạt tác dụng lực đẩy không khí xuống, không khí sẽ tác dụng phản lực đẩy cánh quạt ngược lên trên."
+        },
+        {
+            q: "Câu 28. Trên Trái Đất, một quyển sách được cân thăng bằng bằng một quả cân chuẩn trên cân hai đĩa (cân đòn). Nếu thực hiện lại phép cân này trên Mặt Trăng thì",
+            options: [
+                "cân lệch về phía quyển sách.",
+                "cân lệch về phía quả cân.",
+                "không cân được vì trên Mặt Trăng không có trọng lực.",
+                "cân vẫn thăng bằng vì trọng lượng của cả hai vật giảm theo cùng một tỉ lệ."
+            ],
+            correct: 3,
+            explain: "Cân đòn hoạt động dựa trên sự cân bằng mômen trọng lực (m1*g*d1 = m2*g*d2). Khi gia tốc g giảm trên Mặt Trăng, trọng lượng hai bên giảm cùng tỷ lệ nên cân vẫn thăng bằng."
+        },
+        {
+            q: "Câu 29. Cần một lực đẩy ngang có độ lớn tối thiểu F để một thùng hàng trên sàn bắt đầu trượt. Sau khi thùng đã trượt, để duy trì chuyển động thẳng đều thường chỉ cần lực đẩy",
+            options: [
+                "lớn hơn F, vì thùng đang chuyển động có quán tính lớn hơn.",
+                "nhỏ hơn F, vì lực ma sát trượt thường nhỏ hơn lực ma sát nghỉ cực đại.",
+                "bằng F, vì lực ma sát không phụ thuộc trạng thái chuyển động.",
+                "bằng 0, vì theo định luật I Newton vật tự duy trì chuyển động."
+            ],
+            correct: 1,
+            explain: "Hệ số ma sát trượt nhỏ hơn hệ số ma sát nghỉ cực đại, nên lực ma sát trượt nhỏ hơn lực ma sát nghỉ cực đại F. Do đó chỉ cần lực nhỏ hơn F để duy trì chuyển động."
+        },
+        {
+            q: "Câu 30. Một vật nhỏ buộc vào đầu dây, chuyển động tròn đều trên mặt phẳng ngang nhẵn. Nếu tăng chiều dài dây nhưng giữ nguyên tốc độ dài của vật thì lực căng dây cần thiết",
+            options: [
+                "tăng, vì lực hướng tâm tỉ lệ thuận với bán kính.",
+                "không đổi, vì tốc độ dài không đổi.",
+                "giảm, vì với cùng tốc độ dài, lực hướng tâm tỉ lệ nghịch với bán kính.",
+                "bằng 0, vì vật chuyển động đều."
+            ],
+            correct: 2,
+            explain: "Lực căng dây đóng vai trò lực hướng tâm T = m*v²/r. Khi v không đổi và bán kính r tăng lên thì T giảm."
+        },
+        {
+            q: "Câu 31. Khi xe buýt đang chạy mà phanh gấp, người đứng trên xe thường bị chúi về phía trước. Hiện tượng này chủ yếu do.",
+            options: [
+                "Lực hút của mặt đường.",
+                "Quán tính của người.",
+                "Lực ma sát với không khí.",
+                "Trọng lực của người."
+            ],
+            correct: 1,
+            explain: "Do quán tính, cơ thể người có xu hướng tiếp tục duy trì vận tốc cũ nên bị chúi về phía trước khi xe phanh."
+        },
+        {
+            q: "Câu 32. Một người đẩy chiếc xe đẩy hàng trong siêu thị. Nếu giữ nguyên khối lượng xe và tăng lực đẩy thì xe sẽ.",
+            options: [
+                "Chuyển động đều.",
+                "Có gia tốc nhỏ hơn.",
+                "Đứng yên.",
+                "Có gia tốc lớn hơn."
+            ],
+            correct: 3,
+            explain: "Theo Định luật II Newton (a = F/m), khi khối lượng m không đổi, tăng lực F sẽ làm gia tốc a lớn hơn."
+        },
+        {
+            q: "Câu 33. Khi đi xe máy trên đoạn đường ướt, người lái thường tránh phanh gấp vì.",
+            options: [
+                "Lực hấp dẫn của Trái Đất giảm.",
+                "Lực ma sát giữa lốp và đường có thể giảm.",
+                "Trọng lượng xe tăng lên.",
+                "Động cơ mất hoàn toàn công suất."
+            ],
+            correct: 1,
+            explain: "Đường ướt làm giảm hệ số ma sát giữa lốp và đường, phanh gấp dễ làm xe mất ma sát nghỉ và bị trượt ngã."
+        },
+        {
+            q: "Câu 34. Một quả bóng đang lăn trên sân rồi chậm dần và dừng lại. Lực nào làm bóng thay đổi chuyển động theo hướng ngược với vận tốc của nó?",
+            options: [
+                "Lực đàn hồi của không khí.",
+                "Lực ma sát.",
                 "Trọng lực.",
-                "Lực ma sát nghỉ giữa lốp xe và mặt đường.",
-                "Lực ma sát trượt.",
-                "Lực kéo của động cơ."
+                "Lực nâng."
             ],
             correct: 1,
-            explain: "Lực ma sát nghỉ giữa bánh xe và mặt đường đóng vai trò là lực hướng tâm giữ cho xe bám đường khi vào cua."
+            explain: "Lực ma sát lăn/trượt giữa bóng và mặt sân ngược chiều vận tốc làm bóng chậm dần rồi dừng lại."
         },
         {
-            q: "Câu 20. Nguyên lý tương đối Galilei khẳng định:",
+            q: "Câu 35. Khi một người dùng tay đẩy vào tường, tường cũng tác dụng lực lên tay người. Hai lực này.",
             options: [
-                "Các hiện tượng cơ học diễn ra như nhau trong mọi hệ quy chiếu quán tính.",
-                "Thời gian trôi qua khác nhau trong các hệ quy chiếu chuyển động khác nhau.",
-                "Vận tốc của vật là bất biến trong mọi hệ quy chiếu.",
-                "Lực quán tính xuất hiện trong mọi hệ quy chiếu quán tính."
+                "Có cùng hướng.",
+                "Là hai lực trực đối theo định luật III Newton.",
+                "Luôn có độ lớn khác nhau.",
+                "Cùng tác dụng lên một vật."
             ],
-            correct: 0,
-            explain: "Nguyên lý tương đối Galilei: Các quy luật cơ học đều như nhau (đồng dạng) trong mọi hệ quy chiếu quán tính."
+            correct: 1,
+            explain: "Hai lực tương tác giữa tay và tường là cặp lực - phản lực trực đối theo Định luật III Newton."
         },
         {
-            q: "Câu 21. Phương trình biến đổi tọa độ Galilei giữa hệ K và hệ K' chuyển động thẳng đều với vận tốc u theo trục Ox là:",
+            q: "Câu 36. Hệ quy chiếu quán tính là hệ.",
             options: [
-                "x' = x - u*t, y' = y, z' = z, t' = t.",
-                "x' = x + u*t, y' = y, z' = z, t' = t.",
-                "x' = x - u*t, y' = y - u*t, z' = z, t' = t.",
-                "x' = x, y' = y - u*t, z' = z, t' = t."
-            ],
-            correct: 0,
-            explain: "Phép biến đổi Galilei: x' = x - u*t; y' = y; z' = z; t' = t (thời gian là tuyệt đối)."
-        },
-        {
-            q: "Câu 22. Tác dụng của lực lên một chất điểm có thể gây ra hiệu ứng nào?",
-            options: [
-                "Làm thay đổi vận tốc (gây gia tốc).",
-                "Làm biến dạng vật thể.",
-                "Cả A và B đều đúng.",
-                "Không làm thay đổi bất kỳ trạng thái nào."
+                "Chuyển động có gia tốc với hệ quy chiếu gắn với trái đất",
+                "Chuyển động tròn đều so với hệ quy chiếu gắn với trái đất",
+                "Chuyển động thẳng đều so với hệ quy chiếu gắn với trái đất",
+                "Có hai trong các đáp án trên là đúng"
             ],
             correct: 2,
-            explain: "Tác dụng của lực có hai hiệu ứng chính: làm biến đổi vận tốc (động lực học) hoặc làm biến dạng vật (tĩnh học)."
+            explain: "Hệ quy chiếu đứng yên hoặc chuyển động thẳng đều so với một hệ quy chiếu quán tính (coi gần đúng là Trái Đất) là hệ quy chiếu quán tính."
         },
         {
-            q: "Câu 23. Mômen động lượng L của chất điểm có khối lượng m chuyển động với vận tốc v đối với gốc tọa độ O được định nghĩa là:",
+            q: "Câu 37. Khảo sát chuyển động của một vật trong hệ tọa độ Oxyz. Hệ tọa độ này phải gắn vào vật nào dưới đây để được coi là hệ quy chiếu quán tính.",
             options: [
-                "L = r x p (tích vector giữa vector bán kính vị trí r và động lượng p).",
-                "L = r * p (tích vô hướng).",
-                "L = m * r * v.",
-                "L = I * a."
-            ],
-            correct: 0,
-            explain: "Định nghĩa mômen động lượng của chất điểm: L = r x p = r x (m*v)."
-        },
-        {
-            q: "Câu 24. Đạo hàm theo thời gian của mômen động lượng dL/dt của một chất điểm bằng đại lượng nào?",
-            options: [
-                "Hợp lực F tác dụng lên chất điểm.",
-                "Mômen của hợp lực M = r x F đối với cùng gốc quay.",
-                "Động năng của chất điểm.",
-                "Công suất của lực."
+                "Ô tô chuyển động thẳng nhanh dần đều",
+                "Thang máy đi lên với vận tốc không đổi",
+                "Tàu hỏa chuyển động đều vòng quanh chân núi",
+                "Tàu cánh ngầm đang sắp cập bến"
             ],
             correct: 1,
-            explain: "Phương trình mômen động lượng: dL/dt = M, trong đó M = r x F là mômen lực tác dụng đối với điểm O."
+            explain: "Thang máy đi lên với vận tốc không đổi là chuyển động thẳng đều nên hệ tọa độ gắn vào nó được coi là hệ quy chiếu quán tính."
         },
         {
-            q: "Câu 25. Định luật bảo toàn mômen động lượng xảy ra đối với chất điểm khi:",
+            q: "Câu 38. Khi có ngoại lực tác dụng lên một chất điểm đang chuyển động thẳng đều và cùng phương với chuyển động thì chất điểm đó.",
             options: [
-                "Hợp lực tác dụng lên chất điểm bằng 0.",
-                "Tổng mômen lực M đối với điểm O bằng 0 (dL/dt = 0 => L = const).",
-                "Vật chuyển động thẳng đều.",
-                "Khối lượng của vật không đổi."
-            ],
-            correct: 1,
-            explain: "Nếu tổng mômen lực tác dụng lên chất điểm đối với một điểm bằng 0 thì mômen động lượng L đối với điểm đó được bảo toàn (L = const)."
-        },
-        {
-            q: "Câu 26. Một chất điểm chuyển động dưới tác dụng của lực trung tâm (lực luôn hướng về một điểm cố định O). Mômen động lượng của nó đối với O sẽ:",
-            options: [
-                "luôn thay đổi theo thời gian.",
-                "được bảo toàn không đổi.",
-                "bằng 0.",
-                "tăng dần đều."
-            ],
-            correct: 1,
-            explain: "Lực trung tâm F luôn cùng phương với bán kính vị trí r, do đó mômen lực M = r x F = 0 => dL/dt = 0 nên L được bảo toàn."
-        },
-        {
-            q: "Câu 27. Đơn vị đo mômen động lượng L trong hệ SI là:",
-            options: [
-                "N * m.",
-                "kg * m² / s.",
-                "kg * m / s.",
-                "J * s²."
-            ],
-            correct: 1,
-            explain: "L = r * m * v => Đơn vị: m * kg * (m/s) = kg.m²/s (hoặc J.s)."
-        },
-        {
-            q: "Câu 28. Một giọt mưa rơi thẳng đứng với tốc độ không đổi trong không khí. Hợp lực tác dụng lên giọt mưa bằng bao nhiêu?",
-            options: [
-                "Bằng trọng lượng P = m*g.",
-                "Bằng 0.",
-                "Bằng lực cản không khí.",
-                "Lớn hơn trọng lượng."
-            ],
-            correct: 1,
-            explain: "Giọt mưa rơi thẳng đều có gia tốc a = 0. Theo định luật I Newton, hợp lực tác dụng lên nó bằng 0 (trọng lực cân bằng lực cản không khí)."
-        },
-        {
-            q: "Câu 29. Một người có khối lượng m đứng trong thang máy rơi tự do (a = g). Lực do người nén lên sàn thang máy (trọng lượng ảo) bằng:",
-            options: [
-                "m * g.",
-                "2 * m * g.",
-                "0 (Trạng thái mất trọng lượng).",
-                "m * g / 2."
+                "Vẫn chuyển động thẳng đều",
+                "Sẽ chuyển động tròn đều",
+                "Sẽ chuyển động thẳng biến đổi đều",
+                "Sẽ chuyển động tròn biến đổi đều."
             ],
             correct: 2,
-            explain: "N = m*(g - a) = m*(g - g) = 0. Người rơi tự do trong thang máy ở trạng thái mất trọng lượng hoàn toàn."
+            explain: "Ngoại lực cùng phương với chuyển động sẽ sinh ra gia tốc cùng phương với vận tốc, làm chất điểm chuyển động thẳng biến đổi đều."
         },
         {
-            q: "Câu 30. Khái niệm 'trọng trường đều' có nghĩa là:",
+            q: "Câu 39. Chọn câu sai.",
             options: [
-                "Vectơ gia tốc trọng trường g có phương, chiều và độ lớn như nhau tại mọi điểm trong không gian xét.",
-                "Độ lớn g biến thiên theo độ cao.",
-                "Lực hấp dẫn bằng 0.",
-                "Quỹ đạo mọi vật luôn là đường tròn."
-            ],
-            correct: 0,
-            explain: "Trọng trường đều là vùng không gian mà véc-tơ gia tốc trọng trường g tại mọi điểm hoàn toàn bằng nhau về phương, chiều và độ lớn."
-        },
-        {
-            q: "Câu 31. Định luật II Newton dạng vector F = m*a cho thấy:",
-            options: [
-                "F và a luôn cùng phương, cùng chiều.",
-                "F và a luôn vuông góc nhau.",
-                "F và v luôn cùng chiều.",
-                "a và v luôn cùng chiều."
-            ],
-            correct: 0,
-            explain: "Do m > 0 là đại lượng vô hướng dương, nên véc-tơ gia tốc a luôn cùng phương, cùng chiều với véc-tơ hợp lực F."
-        },
-        {
-            q: "Câu 32. Lực đàn hồi của lò xo tuân theo Định luật Hooke có dạng:",
-            options: [
-                "F_dh = -k * Δx (trong đó k là độ cứng, Δx là độ biến dạng).",
-                "F_dh = k * Δx².",
-                "F_dh = -k / Δx.",
-                "F_dh = m * k * Δx."
-            ],
-            correct: 0,
-            explain: "Định luật Hooke: Lực đàn hồi luôn ngược chiều với chiều biến dạng và tỉ lệ thuận với độ biến dạng: F_dh = -k * Δx."
-        },
-        {
-            q: "Câu 33. Khi chất điểm chuyển động trong hệ quy chiếu quay đều với tốc độ góc ω, ngoài lực quán tính thường -m*a0 còn xuất hiện thêm lực quán tính nào?",
-            options: [
-                "Lực quán tính Coriolis: F_Coriolis = 2*m*(v' x ω).",
-                "Lực ma sát nghỉ.",
-                "Lực hấp dẫn bổ sung.",
-                "Lực điện từ."
-            ],
-            correct: 0,
-            explain: "Trong hệ quy chiếu quay, khi chất điểm chuyển động với vận tốc v' so với hệ quay, nó chịu thêm lực quán tính Coriolis: F_Cor = 2m(v' x ω)."
-        },
-        {
-            q: "Câu 34. Hiệu ứng làm lệch hướng chuyển động của các dòng sông, dòng không khí (gió) trên bề mặt Trái Đất là do tác dụng của:",
-            options: [
-                "Lực ma sát với lòng đất.",
-                "Lực quán tính Coriolis do Trái Đất tự quay.",
-                "Lực hút của Mặt Trăng.",
-                "Áp suất khí quyển."
+                "Lực là nguyên nhân gây ra gia tốc.",
+                "Lực là nguyên nhân gây ra vận tốc.",
+                "Lực là nguyên nhân làm biến đổi chuyển động.",
+                "Có 3 đáp án đúng"
             ],
             correct: 1,
-            explain: "Trái Đất là hệ quy chiếu quay, vật chuyển động trên Trái Đất chịu lực quán tính Coriolis làm lệch hướng (sang phải ở Bắc bán cầu, sang trái ở Nam bán cầu)."
+            explain: "Lực không phải là nguyên nhân gây ra vận tốc. Lực chỉ làm biến đổi vận tốc (gây gia tốc)."
         },
         {
-            q: "Câu 35. Hai lực trực đối cân bằng là hai lực:",
+            q: "Câu 40. Theo định luật III Newton, các vật tương tác với nhau bằng các cặp lực trực đối gọi là lực và phản lực. Một vật đặt nằm yên trên mặt bàn ngang như hình vẽ sẽ chịu tác dụng một phản lực pháp tuyến N. Phản lực của N theo định luật III Newton là:",
             options: [
-                "Cùng tác dụng vào một vật, cùng phương, ngược chiều, cùng độ lớn.",
-                "Tác dụng vào hai vật khác nhau, cùng phương, ngược chiều, cùng độ lớn.",
-                "Cùng phương, cùng chiều, cùng độ lớn.",
-                "Tác dụng vào cùng một vật, vuông góc nhau."
+                "Trọng lực P",
+                "Áp lực Q của vật mà vật đè lên bàn.",
+                "Lực ma sát giữa mặt bàn và vật.",
+                "A, B, C đều sai."
+            ],
+            correct: 1,
+            explain: "N là lực bàn đẩy lên vật. Theo Định luật III Newton, phản lực tương ứng phải là lực vật đè xuống bàn (áp lực Q)."
+        },
+        {
+            q: "Câu 41. Chiếc ôtô chạy thẳng đều trên đường nằm ngang. Kí hiệu Fk là lực phát động của động cơ, m là khối lượng ôtô, g là gia tốc trọng trường và µ là hệ số ma sát giữa ôtô và mặt đường thì.",
+            options: [
+                "Fk = mg",
+                "Fk = µmg",
+                "Fk > mg",
+                "Fk > µmg"
+            ],
+            correct: 1,
+            explain: "Xe chạy thẳng đều nên Fk = Fms = µ*N = µ*m*g."
+        },
+        {
+            q: "Câu 42. Quán tính của một vật thể hiện.",
+            options: [
+                "Mức độ chống lại sự thay đổi trạng thái vận tốc của vật đó.",
+                "Xu hướng vật luôn tự duy trì chuyển động tròn xung quanh một tâm quay.",
+                "Lực tự phát sinh bên trong vật để duy trì chuyển động khi hết lực tác dụng.",
+                "Khả năng giữ nguyên hình dạng và kích thước khi chịu tác dụng của ngoại lực."
             ],
             correct: 0,
-            explain: "Hai lực cân bằng là hai lực cùng đặt vào một vật, cùng phương, ngược chiều và có cùng độ lớn (triệt tiêu lực tác dụng lên vật đó)."
+            explain: "Quán tính biểu thị mức độ chống lại (cản trở) sự thay đổi trạng thái vận tốc của vật."
         },
         {
-            q: "Câu 36. Lực ma sát nghỉ có đặc điểm gì?",
+            q: "Câu 43. Một người đứng trên một cái cân bàn đặt trong thang máy đang chuyển động xuống và chậm dần đều. Nhận xét nào đúng về số chỉ của cân?",
             options: [
-                "Có độ lớn cố định không đổi.",
-                "Luôn có độ lớn bằng lực ma sát trượt.",
-                "Là lực tự điều chỉnh, có độ lớn cân bằng với thành phần lực kéo song song với mặt tiếp xúc (F_msn ≤ μ_n * N).",
-                "Cùng chiều với chiều chuyển động của vật."
+                "Lớn hơn khối lượng thực tế do xuất hiện lực quán tính hướng xuống dưới.",
+                "Nhỏ hơn khối lượng thực tế do thang máy đang chuyển động đi xuống.",
+                "Bằng đúng khối lượng thực tế vì gia tốc trọng trường không đổi.",
+                "Bằng 0 vì thang máy đang chuyển động chậm dần đều."
+            ],
+            correct: 0,
+            explain: "Thang máy đi xuống chậm dần đều nên gia tốc a hướng lên. Lực quán tính Fqt = m*a hướng xuống dưới làm áp lực lên cân N = m*(g + a) lớn hơn khối lượng thực tế."
+        },
+        {
+            q: "Câu 44. Bản chất của lực quán tính ly tâm xuất hiện trong hệ quy chiếu chuyển động quay đều là.",
+            options: [
+                "Lực ảo xuất hiện do sự thay đổi hướng của vectơ vận tốc tương đối trong hệ quay.",
+                "Lực cơ học thực tế xuất hiện do sự tương tác trực tiếp giữa các vật thể.",
+                "Lực luôn có phương tiếp tuyến với quỹ đạo chuyển động của vật.",
+                "Lực sinh ra do gia tốc góc của hệ quy chiếu quay bị thay đổi."
+            ],
+            correct: 0,
+            explain: "Lực quán tính ly tâm là lực ảo (lực quán tính) chỉ xuất hiện trong hệ quy chiếu quay phi quán tính."
+        },
+        {
+            q: "Câu 45. Định luật III Newton về cặp lực và phản lực KHÔNG áp dụng được cho dạng lực nào sau đây?",
+            options: [
+                "Các lực quán tính xuất hiện trong hệ quy chiếu phi quán tính.",
+                "Lực hấp dẫn tương tác giữa hai khối lượng ở khoảng cách xa.",
+                "Lực ma sát nghỉ giữ cho vật đứng yên trên mặt phẳng nghiêng.",
+                "Lực đàn hồi của lò xo tác dụng lên vật gắn ở đầu lò xo."
+            ],
+            correct: 0,
+            explain: "Lực quán tính không phải do sự tương tác giữa hai vật thực tế sinh ra nên không có phản lực tương ứng để áp dụng Định luật III Newton."
+        },
+        {
+            q: "Câu 46. Hiện tượng các dòng sông ở Bắc Bán Cầu thường bị sạt lở mạnh ở bờ bên phải (theo chiều dòng chảy) có nguyên nhân vật lý cốt lõi là gì?",
+            options: [
+                "Lực quán tính Coriolis do Trái Đất tự quay quanh trục từ Tây sang Đông.",
+                "Lực quán tính ly tâm do chuyển động quay của Trái Đất xung quanh Mặt Trời.",
+                "Lực hấp dẫn của Mặt Trăng tạo ra hiện tượng thủy triều làm lở bờ.",
+                "Sự lệch hướng của trục quay Trái Đất so với mặt phẳng quỹ đạo."
+            ],
+            correct: 0,
+            explain: "Trái Đất quay làm xuất hiện lực quán tính Coriolis đẩy dòng chảy lệch về phía bên phải theo chiều chuyển động ở Bắc bán cầu."
+        },
+        {
+            q: "Câu 47. Đặc điểm nào sau đây KHÔNG phải của lực ma sát trượt",
+            options: [
+                "Xuất hiện khi vật trượt trên bề mặt vật khác",
+                "Luôn ngược chiều với chiều chuyển động",
+                "Tỉ lệ với áp lực vuông góc với mặt tiếp xúc",
+                "Luôn cân bằng với thành phần tiếp tuyến với mặt tiếp xúc của ngoại lực"
+            ],
+            correct: 3,
+            explain: "Lực ma sát trượt có độ lớn cố định Fmst = µ*N chứ không thay đổi để cân bằng với ngoại lực như lực ma sát nghỉ."
+        },
+        {
+            q: "Câu 48. Chỉ ra kết luận sai trong các kết luận sau đây?",
+            options: [
+                "Trọng lực của một vật được xem gần đúng là lực hút của Trái Đất tác dụng lên vật đó.",
+                "Trọng lực có chiều hướng về phía Trái Đất.",
+                "Trọng lực của một vật giảm khi đưa vật lên cao hoặc đưa vật từ cực bắc trở về xích đạo.",
+                "Trên Mặt Trăng, nhà du hành vũ trụ có thể nhảy lên rất cao so me khi nhảy ở Trái Đất vì ở đó khối lượng và trọng lượng của nhà du hành giảm."
+            ],
+            correct: 3,
+            explain: "Khối lượng m của nhà du hành là đại lượng bất biến không đổi, chỉ có trọng lượng P giảm do gia tốc trọng trường trên Mặt Trăng nhỏ hơn."
+        },
+        {
+            q: "Câu 49. Cần phải tăng hay giảm khoảng cách giữa hai vật bao nhiêu, để lực hút tăng 6 lần?",
+            options: [
+                "Tăng 6 lần.",
+                "Tăng √6 lần.",
+                "Giảm 6 lần.",
+                "Giảm √6 lần."
+            ],
+            correct: 3,
+            explain: "Fhd tỉ lệ nghịch với r². Để F tăng 6 lần thì khoảng cách r phải giảm đi √6 lần."
+        },
+        {
+            q: "Câu 50. Vật nào sau đây chuyển động theo quán tính?",
+            options: [
+                "Vật chuyển động trên một đường thẳng.",
+                "Vật rơi tự do từ trên cao xuống không ma sát.",
+                "Vật chuyển động khi tất cả các lực tác dụng lên vật mất đi.",
+                "Vật chuyển động tròn đều"
             ],
             correct: 2,
-            explain: "Lực ma sát nghỉ có giá trị biến thiên từ 0 đến F_msn_max = μ_n * N để chống lại xu hướng chuyển động của vật."
+            explain: "Theo Định luật I Newton, khi tất cả các lực tác dụng mất đi, vật sẽ chuyển động thẳng đều theo quán tính."
         },
         {
-            q: "Câu 37. Chọn phát biểu SAI về lực ma sát trượt:",
+            q: "Câu 51. Câu nào đúng? Trong một cơn lốc xoáy, một hòn đá bay trúng vào một cửa kính, làm vỡ kính.",
             options: [
-                "Phụ thuộc vào vật liệu của bề mặt.",
-                "Phụ thuộc vào diện tích bề mặt tiếp xúc.",
-                "Ngược chiều với vận tốc tương đối giữa hai bề mặt.",
-                "Tỉ lệ thuận với áp lực pháp tuyến N."
+                "Lực của hòn đá tác dụng vào tấm kính lớn hơn lực của tấm kính tác dụng vào hòn đá.",
+                "Lực của hòn đá tác dụng vào tấm kính về độ lớn bằng lực của tấm kính tác dụng vào hòn đá.",
+                "Lực của hòn đá tác dụng vào tấm kính nhỏ hơn lực của tấm kính tác dụng vào hòn đá.",
+                "Lực của hòn đá tác dụng vào tấm kính lớn hơn trọng lượng của tấm kính."
             ],
             correct: 1,
-            explain: "Thực nghiệm chứng minh lực ma sát trượt KHÔNG phụ thuộc vào diện tích bề mặt tiếp xúc."
+            explain: "Theo Định luật III Newton, lực tác dụng giữa hòn đá và tấm kính luôn bằng nhau về độ lớn."
         },
         {
-            q: "Câu 38. Động lượng p của một hệ chất điểm được bảo toàn khi:",
+            q: "Câu 52. Một xe đang chuyển động thì phanh gấp, khiến người ngồi trên xe có xu hướng chúi về phía trước. Nguyên nhân chính là.",
             options: [
-                "Không có ngoại lực tác dụng hoặc tổng ngoại lực tác dụng lên hệ bằng 0 (hệ cô lập).",
-                "Trong hệ có ma sát lớn.",
-                "Hệ chuyển động quay đều.",
-                "Nội lực của hệ bằng 0."
+                "Quán tính khiến cơ thể có xu hướng duy trì vận tốc trước khi phanh.",
+                "Một lực mới xuất hiện đẩy cơ thể về phía trước khi xe phanh.",
+                "Trọng lực đổi hướng từ thẳng đứng sang hướng chuyển động.",
+                "Lực của ghế lên người tăng theo hướng chuyển động của xe."
             ],
             correct: 0,
-            explain: "Định luật bảo toàn động lượng: Tổng động lượng của một hệ cô lập (tổng ngoại lực ∑F_ngoai = 0) là một đại lượng không đổi."
+            explain: "Do quán tính, cơ thể người tiếp tục duy trì vận tốc cũ nên nghiêng chúi về phía trước."
         },
         {
-            q: "Câu 39. Xung lượng của lực F trong khoảng thời gian từ t1 đến t2 được xác định bởi tích phân:",
+            q: "Câu 53. Một vật trượt thẳng với vận tốc không đổi trên sàn ngang trong khi được kéo bằng một lực nằm ngang. Nhận xét nào đúng?",
             options: [
-                "J = ∫ F dt.",
-                "J = ∫ F dx.",
-                "J = F / Δt.",
-                "J = dF / dt."
+                "Vật chuyển động nên hợp lực phải cùng chiều vận tốc.",
+                "Lực kéo phải lớn hơn lực ma sát để duy trì chuyển động.",
+                "Vật không có gia tốc nên không chịu bất kỳ lực nào.",
+                "Hợp lực bằng không vì các lực tác dụng cân bằng nhau."
+            ],
+            correct: 3,
+            explain: "Trượt thẳng với vận tốc không đổi là chuyển động thẳng đều, hợp lực tác dụng lên vật bằng 0."
+        },
+        {
+            q: "Câu 54. Khi một người dùng tay đẩy vào tường, tường tác dụng lực lên tay người đó. Hai lực này không triệt tiêu nhau khi xét chuyển động của người vì.",
+            options: [
+                "Lực người đẩy tường luôn lớn hơn lực tường đẩy người.",
+                "Lực tường đẩy người chỉ xuất hiện khi người chuyển động.",
+                "Hai lực tác dụng lên hai vật khác nhau.",
+                "Hai lực có cùng chiều nhưng khác độ lớn."
+            ],
+            correct: 2,
+            explain: "Cặp lực và phản lực không triệt tiêu nhau vì chúng đặt vào hai vật khác nhau (một lực đặt lên tường, một lực đặt lên tay người)."
+        },
+        {
+            q: "Câu 55. Một người đứng trên cân trong thang máy. Khi thang máy có gia tốc hướng lên, số chỉ của cân so với khi thang máy đứng yên sẽ.",
+            options: [
+                "Lớn hơn, vì lực đỡ của cân lớn hơn trọng lực.",
+                "Nhỏ hơn, vì lực đỡ của cân nhỏ hơn trọng lực.",
+                "Không đổi, vì khối lượng của người không đổi.",
+                "Bằng không, vì người chuyển động cùng thang máy."
             ],
             correct: 0,
-            explain: "Định nghĩa xung lượng của lực là tích phân của lực theo thời gian: J = ∫ F dt = Δp."
+            explain: "Gia tốc a hướng lên tạo lực quán tính m*a hướng xuống, làm phản lực đỡ N = m*(g + a) > m*g."
         },
         {
-            q: "Câu 40. Một đĩa quay tròn đều quanh trục thẳng đứng. Một vật nhỏ đặt trên đĩa không bị trượt ra ngoài là nhờ:",
+            q: "Câu 56. Một thùng hàng đứng yên trên sàn ngang. Người ta tăng dần lực đẩy nằm ngang nhưng thùng vẫn chưa trượt. Trong giai đoạn này, lực ma sát nghỉ.",
             options: [
-                "Lực ma sát trượt.",
-                "Lực ma sát nghỉ giữ vai trò lực hướng tâm.",
-                "Trọng lực của vật.",
-                "Lực căng bề mặt."
+                "Luôn bằng giá trị cực đại, bất kể lực đẩy lớn hay nhỏ.",
+                "Tăng theo lực đẩy để giữ thùng đứng yên, đến giới hạn cực đại.",
+                "Giảm dần khi lực đẩy tăng vì thùng sắp chuyển động.",
+                "Bằng không vì giữa thùng và sàn chưa có chuyển động tương đối."
             ],
             correct: 1,
-            explain: "Lực ma sát nghỉ giữa vật và mặt đĩa đóng vai trò lực hướng tâm giúp vật quay cùng đĩa mà không bị văng ra ngoài."
+            explain: "Lực ma sát nghỉ là lực biến đổi, tăng dần cân bằng với lực đẩy kéo cho đến khi đạt giá trị cực đại Fmsn_max = µn*N."
         },
         {
-            q: "Câu 41. Một chất điểm khối lượng m = 2 kg chịu tác dụng của lực F = 6 N. Gia tốc của chất điểm thu được là:",
+            q: "Câu 57. Một vật có khối lượng 5 kg nằm trên mặt phẳng ngang nhẵn. Tác dụng lên vật một lực kéo nằm ngang có độ lớn 20 N. Gia tốc của vật bằng",
             options: [
-                "12 m/s².",
+                "2 m/s².",
+                "4 m/s².",
+                "5 m/s².",
+                "10 m/s²."
+            ],
+            correct: 1,
+            explain: "a = F/m = 20/5 = 4 m/s²."
+        },
+        {
+            q: "Câu 58. Một vật có khối lượng 4 kg nằm trên mặt phẳng ngang. Hệ số ma sát trượt giữa vật và mặt phẳng là 0,20. Tác dụng lên vật một lực kéo nằm ngang có độ lớn 20 N. Lấy g = 10 m/s². Gia tốc của vật bằng",
+            options: [
+                "2 m/s².",
                 "3 m/s².",
-                "0.33 m/s².",
-                "4 m/s²."
+                "4 m/s².",
+                "5 m/s²."
             ],
             correct: 1,
-            explain: "Áp dụng định luật II Newton: a = F / m = 6 / 2 = 3 m/s²."
+            explain: "Fms = µ*m*g = 0.2*4*10 = 8 N. Gia tốc a = (F - Fms)/m = (20 - 8)/4 = 3 m/s²."
         },
         {
-            q: "Câu 42. Động lượng p của vật khối lượng m = 1 kg đang chuyển động với vận tốc v = 5 m/s có độ lớn là:",
+            q: "Câu 59. Một vật có khối lượng 2 kg được treo vào một sợi dây nhẹ và được kéo thẳng đứng lên trên với gia tốc 3 m/s². Lấy g = 10 m/s². Lực căng của dây bằng",
             options: [
-                "5 kg.m/s.",
-                "2.5 kg.m/s.",
-                "10 kg.m/s.",
-                "0.2 kg.m/s."
-            ],
-            correct: 0,
-            explain: "p = m * v = 1 * 5 = 5 kg.m/s."
-        },
-        {
-            q: "Câu 43. Một vật trượt trên mặt phẳng nằm ngang với vận tốc ban đầu v0 = 10 m/s. Hệ số ma sát trượt μ = 0.2. Lấy g = 10 m/s². Quãng đường vật đi được cho đến khi dừng lại là:",
-            options: [
-                "25 m.",
-                "50 m.",
-                "20 m.",
-                "10 m."
-            ],
-            correct: 0,
-            explain: "Gia tốc hãm a = -μ*g = -0.2*10 = -2 m/s². Áp dụng v² - v0² = 2as => 0 - 10² = 2*(-2)*s => s = 100 / 4 = 25 m."
-        },
-        {
-            q: "Câu 44. Độ cứng của một lò xo là k = 100 N/m. Khi lò xo bị dãn một đoạn Δx = 0.05 m, độ lớn lực đàn hồi là:",
-            options: [
-                "5 N.",
-                "500 N.",
+                "14 N.",
                 "20 N.",
-                "0.5 N."
-            ],
-            correct: 0,
-            explain: "F_dh = k * Δx = 100 * 0.05 = 5 N."
-        },
-        {
-            q: "Câu 45. Cho hai lực F1 = 3 N và F2 = 4 N cùng tác dụng vào một chất điểm. Độ lớn hợp lực F lớn nhất có thể đạt được là:",
-            options: [
-                "1 N.",
-                "5 N.",
-                "7 N.",
-                "12 N."
+                "26 N.",
+                "32 N."
             ],
             correct: 2,
-            explain: "Hợp lực đạt giá trị cực đại khi F1 và F2 cùng phương, cùng chiều: F_max = F1 + F2 = 3 + 4 = 7 N."
+            explain: "T - P = m*a => T = m*(g + a) = 2*(10 + 3) = 26 N."
         },
         {
-            q: "Câu 46. Quả cầu khối lượng m = 0.5 kg gắn vào đầu dây dài l = 1 m quay tròn đều trong mặt phẳng nằm ngang với tốc độ v = 2 m/s. Lực căng dây đóng vai trò lực hướng tâm có độ lớn là:",
+            q: "Câu 60. Một vật có khối lượng 2 kg trượt xuống một mặt phẳng nghiêng góc 30° so với phương ngang. Bỏ qua ma sát và lấy g = 10 m/s². Gia tốc của vật dọc theo mặt phẳng nghiêng bằng",
             options: [
-                "1 N.",
-                "2 N.",
-                "4 N.",
-                "0.5 N."
+                "2,5 m/s².",
+                "5 m/s².",
+                "8,66 m/s².",
+                "10 m/s²."
             ],
             correct: 1,
-            explain: "F_ht = m * v² / r = 0.5 * 2² / 1 = 2 N."
+            explain: "a = g*sin(30°) = 10 * 0.5 = 5 m/s²."
         },
         {
-            q: "Câu 47. Khái niệm 'Chất điểm cô lập' là:",
+            q: "Câu 61. Một ô tô có khối lượng 1000 kg chuyển động qua một đoạn đường cong nằm ngang có bán kính 50 m với tốc độ 10 m/s. Độ lớn của hợp lực hướng tâm tác dụng lên ô tô bằng",
             options: [
-                "Chất điểm đứng yên hoàn toàn.",
-                "Chất điểm không chịu tác dụng của bất kỳ lực nào từ bên ngoài.",
-                "Chất điểm có khối lượng bằng 0.",
-                "Chất điểm chuyển động trong chân không."
+                "1000 N.",
+                "2000 N.",
+                "5000 N.",
+                "10 000 N."
             ],
             correct: 1,
-            explain: "Chất điểm cô lập (hệ cô lập) là chất điểm hoàn toàn không chịu tác dụng tương tác từ các vật khác bên ngoài."
+            explain: "Fht = m*v²/r = 1000 * 10² / 50 = 2000 N."
         },
         {
-            q: "Câu 48. Gia tốc góc β của chuyển động quay của chất điểm quanh trục cố định liên hệ với mômen lực M và mômen quán tính I qua công thức:",
+            q: "Câu 62. Độ lớn của lực ma sát nghỉ tác dụng lên một vật đang đứng yên trên mặt phẳng ngang có đặc điểm nào sau đây?",
             options: [
-                "M = I * β.",
-                "M = I / β.",
-                "β = I * M.",
-                "M = I * ω."
+                "Luôn bằng hệ số ma sát nghỉ nhân với lực pháp tuyến.",
+                "Luôn bằng không.",
+                "Có thể thay đổi để duy trì trạng thái đứng yên, đến một giá trị cực đại.",
+                "Luôn lớn hơn trọng lực của vật"
+            ],
+            correct: 2,
+            explain: "Lực ma sát nghỉ tự điều chỉnh độ lớn cân bằng với lực tác dụng cho tới khi đạt giá trị ma sát nghỉ cực đại."
+        },
+        {
+            q: "Câu 63. Đối với một vật đang trượt trên mặt phẳng nằm ngang, lực ma sát trượt có chiều như thế nào?",
+            options: [
+                "Cùng chiều với vận tốc của vật so với mặt phẳng.",
+                "Ngược chiều chuyển động của vật so với mặt phẳng.",
+                "Luôn hướng thẳng đứng xuống dưới.",
+                "Luôn hướng về tâm Trái Đất"
+            ],
+            correct: 1,
+            explain: "Lực ma sát trượt luôn ngược chiều chuyển động (vận tốc) tương đối của vật."
+        },
+        {
+            q: "Câu 64. Một vật được treo bằng dây trong thang máy đang chuyển động nhanh dần đều theo hướng lên trên. Lực căng dây tác dụng lên vật sẽ.",
+            options: [
+                "Lớn hơn trọng lượng của vật.",
+                "Nhỏ hơn trọng lượng của vật.",
+                "Bằng trọng lượng của vật.",
+                "Bằng không."
             ],
             correct: 0,
-            explain: "Phương trình cơ bản của chuyển động quay: M = I * β (tương đương với F = m * a trong chuyển động tịnh tiến)."
+            explain: "Thang máy đi lên nhanh dần đều có gia tốc hướng lên => T = m*(g + a) > m*g."
         },
         {
-            q: "Câu 49. Trọng lực P tác dụng lên vật khối lượng m gần mặt đất có phương và chiều là:",
+            q: "Câu 65. Một vật đang trượt trên mặt phẳng nằm ngang, lực ma sát trượt có chiều như thế nào?",
             options: [
-                "Phương thẳng đứng, chiều từ dưới lên trên.",
-                "Phương thẳng đứng, chiều từ trên hướng về tâm Trái Đất.",
-                "Phương nằm ngang.",
-                "Phương tiếp tuyến với bề mặt Trái Đất."
+                "Cùng chiều với vận tốc của vật so với mặt phẳng.",
+                "Ngược chiều chuyển động của vật so với mặt phẳng.",
+                "Luôn hướng thẳng đứng xuống dưới.",
+                "Luôn hướng về tâm Trái Đất"
             ],
             correct: 1,
-            explain: "Trọng lực P = m*g là trường hợp riêng của lực hấp dẫn, có phương thẳng đứng và chiều hướng về tâm Trái Đất."
+            explain: "Lực ma sát trượt có chiều ngược chiều với chiều chuyển động tương đối."
         },
         {
-            q: "Câu 50. Trong chuyển động thẳng biến đổi đều dưới tác dụng của hợp lực F không đổi, động năng của vật biến thiên theo công thức:",
+            q: "Câu 66. Một vật có khối lượng 2 kg được treo đứng yên bằng một sợi dây thẳng đứng. Độ lớn lực căng dây bằng (cho g = 10 m/s2)?",
             options: [
-                "Wd2 - Wd1 = A (Công của hợp lực F).",
-                "Wd2 - Wd1 = F * t.",
-                "Wd2 - Wd1 = 0.",
-                "Wd2 - Wd1 = p2 - p1."
+                "10 N.",
+                "15 N.",
+                "20 N.",
+                "40 N."
+            ],
+            correct: 2,
+            explain: "Vật đứng yên nên T = P = m*g = 2 * 10 = 20 N."
+        },
+        {
+            q: "Câu 67. Một viên gạch trượt trên mặt phẳng ngang. Muốn tăng độ lớn lực ma sát tác dụng lên viên gạch thì.",
+            options: [
+                "Đặt viên gạch thứ hai lên trên nó.",
+                "Giảm diện tích tiếp xúc.",
+                "Tăng diện tích tiếp xúc.",
+                "Giảm khối lượng viên gạch."
             ],
             correct: 0,
-            explain: "Định lý động năng: Độ biến thiên động năng của chất điểm bằng công của hợp lực tác dụng lên chất điểm đó: ΔWd = A."
+            explain: "Fmst = µ*N = µ*m*g. Đặt thêm viên gạch làm tăng khối lượng m, tăng áp lực N do đó tăng lực ma sát trượt."
+        },
+        {
+            q: "Câu 68. Một người kéo một vali trên sàn bằng một lực nghiêng hướng lên so với phương ngang. Khi góc kéo tăng nhưng độ lớn lực kéo không đổi, lực ép của vali lên mặt sàn có xu hướng thay đổi như thế nào?",
+            options: [
+                "Tăng vì lực kéo có phương nghiêng.",
+                "Giảm vì thành phần thẳng đứng hướng lên của lực kéo làm giảm áp lực lên mặt sàn.",
+                "Không đổi vì trọng lượng của vali không đổi.",
+                "Bằng không vì vali đang chuyển động."
+            ],
+            correct: 1,
+            explain: "Phản lực N = P - F*sinα. Khi góc α tăng thì sinα tăng, làm cho áp lực N ép lên sàn giảm đi."
+        },
+        {
+            q: "Câu 69. Một khẩu đại bác được đặt trên một bề mặt nhẵn. Khi bắn đạn, khẩu đại bác chuyển động giật lùi về phía sau. Hiện tượng giật lùi này xảy ra do.",
+            options: [
+                "Định luật bảo toàn năng lượng.",
+                "Lực đẩy ngược chiều của luồng khí.",
+                "Định luật III Newton.",
+                "Định luật I Newton."
+            ],
+            correct: 2,
+            explain: "Đại lượng giật lùi giải thích bằng lực và phản lực theo Định luật III Newton (hoặc bảo toàn động lượng)."
+        },
+        {
+            q: "Câu 70. Một người muốn đẩy một thùng hàng đang trượt trên sàn kho. Người đó đặt thêm một số vật nặng vào trong thùng trước khi tiếp tục đẩy. Giả sử hệ số ma sát giữa thùng và sàn không đổi. Nhận xét nào sau đây đúng?",
+            options: [
+                "Lực ma sát giảm vì thùng chuyển động chậm hơn.",
+                "Lực ma sát tăng vì trọng lượng của thùng tăng, làm tăng áp lực lên mặt sàn.",
+                "Lực ma sát không đổi vì diện tích tiếp xúc giữa thùng và sàn không đổi.",
+                "Lực ma sát giảm vì khối lượng lớn làm thùng khó chuyển động."
+            ],
+            correct: 1,
+            explain: "Thêm vật nặng làm tăng khối lượng, tăng áp lực N = m*g nên lực ma sát Fms = µ*N tăng lên."
+        },
+        {
+            q: "Câu 71. Một quả bóng đập vào tường rồi bật ngược trở lại. Trong thời gian va chạm, tường tác dụng lên quả bóng một lực làm thay đổi vận tốc của bóng. Hiện tượng này thể hiện trực tiếp.",
+            options: [
+                "Định luật I Newton.",
+                "Định luật II Newton.",
+                "Định luật bảo toàn cơ năng.",
+                "Định luật bảo toàn momen động lượng."
+            ],
+            correct: 1,
+            explain: "Lực do tường tác dụng làm biến đổi vận tốc (gây ra gia tốc) cho quả bóng thể hiện trực tiếp Định luật II Newton (F = m*a)."
+        },
+        {
+            q: "Câu 72. Chọn phát biểu đúng.",
+            options: [
+                "Lực ma sát trượt phụ thuộc vào diện tích hai mặt tiếp xúc.",
+                "Lực ma sát trượt phụ thuộc vào vật liệu và tình trạng của hai mặt tiếp xúc.",
+                "Lực ma sát trượt không phụ thuộc vào độ lớn của áp lực.",
+                "Lực ma sát trượt không phụ thuộc vào khối lượng của vật trượt."
+            ],
+            correct: 1,
+            explain: "Hệ số ma sát trượt và lực ma sát trượt phụ thuộc vào bản chất vật liệu và tình trạng bề mặt tiếp xúc."
+        },
+        {
+            q: "Câu 73. Trong các câu sau, câu nào đúng?",
+            options: [
+                "Lực đẩy Archimedes cùng chiều với trọng lực.",
+                "Lực đẩy Archimedes tác dụng theo mọi phương vì chất lỏng gây áp suất theo mọi phương.",
+                "Lực đẩy Archimedes có điểm đặt ở vật.",
+                "Lực đẩy Archimedes luôn có độ lớn bằng trọng lượng của vật."
+            ],
+            correct: 2,
+            explain: "Lực đẩy Archimedes là lực chất lỏng tác dụng đặt trực tiếp vào vật bị chìm trong chất lỏng."
+        },
+        {
+            q: "Câu 74. Có hai lực đồng quy F1 và F2 . Gọi α là góc hợp bởi F1 và F2 và F=F1+F2 . Nếu F = F1 + F2 thì.",
+            options: [
+                "α = 0°",
+                "α = 90°.",
+                "α = 180°.",
+                "0 < α < 90°"
+            ],
+            correct: 0,
+            explain: "Hợp lực F = F1 + F2 khi và chỉ khi hai lực thành phần F1 và F2 cùng phương, cùng chiều (α = 0°)."
+        },
+        {
+            q: "Câu 75. Chọn phát biểu sai?",
+            options: [
+                "Vệ tinh nhân tạo chuyển động tròn đều quanh Trái Đất do lực hấp dẫn đóng vai trò lực hướng tâm.",
+                "Xe chuyển động vào một đoạn đường cong (khúc cua), lực đóng vai trò hướng tâm luôn là lực ma sát.",
+                "Xe chuyển động đều trên đỉnh của một cây cầu cong, hợp lực của trọng lực và phản lực vuông góc đóng vai trò lực hướng tâm.",
+                "Vật nằm yên đối với mặt bàn nằm ngang đang quay đều quanh trục thẳng đứng thì lực ma sát nghỉ đóng vai trò lực hướng tâm."
+            ],
+            correct: 1,
+            explain: "Khi xe vào khúc cua nghiêng, thành phần phản lực N cũng tham gia đóng vai trò lực hướng tâm chứ không phải 'luôn là lực ma sát'."
+        },
+        {
+            q: "Câu 76. Điều nào sau đây là sai khi nói về phương và độ lớn của lực đàn hồi?",
+            options: [
+                "Với cùng độ biến dạng như nhau, độ lớn của lực đàn hồi phụ thuộc vào bản chất của vật đàn hồi.",
+                "Với các mặt tiếp xúc bị biến dạng, lực đàn hồi vuông góc với các mặt tiếp xúc.",
+                "Với các vật như lò xo, dây cao su, thanh dài, lực đàn hồi hướng dọc theo trục của vật.",
+                "Lực đàn hồi có độ lớn tỉ lệ nghịch với độ biến dạng của vật biến dạng."
+            ],
+            correct: 3,
+            explain: "Theo Định luật Hooke (Fdh = k*|Δl|), độ lớn lực đàn hồi tỉ lệ thuận với độ biến dạng, không phải tỉ lệ nghịch."
+        },
+        {
+            q: "Câu 77. Theo định luật I Newton, nếu hợp lực tác dụng lên một vật bằng 0 thì vật sẽ.",
+            options: [
+                "Luôn đứng yên.",
+                "Luôn chuyển động thẳng đều.",
+                "Đứng yên hoặc chuyển động thẳng đều.",
+                "Chuyển động nhanh dần đều."
+            ],
+            correct: 2,
+            explain: "Vật đứng yên sẽ tiếp tục đứng yên, vật đang chuyển động sẽ tiếp tục chuyển động thẳng đều."
+        },
+        {
+            q: "Câu 78. Theo định luật II Newton, gia tốc của một vật.",
+            options: [
+                "Luôn cùng hướng với vận tốc.",
+                "Cùng hướng với hợp lực tác dụng lên vật.",
+                "Ngược hướng với hợp lực.",
+                "Không phụ thuộc vào khối lượng của vật."
+            ],
+            correct: 1,
+            explain: "Vector gia tốc a = F/m luôn luôn cùng hướng với hợp lực F."
+        },
+        {
+            q: "Câu 79. Cặp lực và phản lực theo định luật III Newton có đặc điểm.",
+            options: [
+                "Cùng tác dụng lên một vật.",
+                "Có cùng phương, cùng chiều và cùng độ lớn.",
+                "Có cùng độ lớn, ngược chiều và tác dụng lên hai vật khác nhau.",
+                "Luôn triệt tiêu lẫn nhau ."
+            ],
+            correct: 2,
+            explain: "Lực và phản lực luôn cùng độ lớn, ngược chiều và đặt vào hai vật tương tác khác nhau."
+        },
+        {
+            q: "Câu 80. Khi một vật đặt trên mặt phẳng ngang và không có gia tốc theo phương thẳng đứng, phản lực của mặt phẳng lên vật.",
+            options: [
+                "Luôn bằng trọng lực của vật.",
+                "Có thể bằng hoặc không bằng trọng lực, tùy các lực khác tác dụng.",
+                "Luôn lớn hơn trọng lực.",
+                "Luôn nhỏ hơn trọng lực."
+            ],
+            correct: 1,
+            explain: "Nếu có thêm lực kéo xiên, N = P - F*sinα, do đó phản lực N phụ thuộc các lực khác tác dụng theo phương đứng."
+        },
+        {
+            q: "Câu 81. Lực ma sát trượt có đặc điểm nào sau đây?",
+            options: [
+                "Luôn cùng chiều chuyển động.",
+                "Luôn ngược chiều vận tốc của vật.",
+                "Chống lại sự trượt tương đối giữa hai bề mặt tiếp xúc.",
+                "Không phụ thuộc vào phản lực."
+            ],
+            correct: 2,
+            explain: "Bản chất lực ma sát trượt là cản trở (chống lại) sự trượt tương đối giữa hai bề mặt."
+        },
+        {
+            q: "Câu 82. Một vật đang chuyển động thẳng với vận tốc 5m/s. Nếu giả sử các lực tác dụng lên vật mất đi thì vật",
+            options: [
+                "chuyển động chậm dần rồi mới dừng lại.",
+                "tiếp tục chuyển động thẳng đều với vận tốc 5 m/s.",
+                "đổi hướng chuyển động.",
+                "dừng lại ngay."
+            ],
+            correct: 1,
+            explain: "Theo Định luật I Newton, khi mất hết lực tác dụng, vật duy trì chuyển động thẳng đều với vận tốc ban đầu 5 m/s."
+        },
+        {
+            q: "Câu 83. Một người làm động tác “hít đất”. nằm sấp, chống tay xuống sàn để nâng người lên thì",
+            options: [
+                "người đó không tác dụng lực lên sàn.",
+                "sàn tác dụng lên người đó một lực hướng lên.",
+                "sàn không tác dụng lực lên người đó.",
+                "người đó tác dụng lên sàn một lực hướng lên."
+            ],
+            correct: 1,
+            explain: "Khi tay người đẩy sàn xuống dưới, theo Định luật III Newton, sàn tác dụng phản lực đẩy người lên trên."
+        },
+        {
+            q: "Câu 84. Những nhận định nào sau đây là đúng?",
+            options: [
+                "1. Khi vật chỉ chịu tác dụng của lực F thì gia tốc mà vật thu được cùng phương nhưng ngược chiều với F.",
+                "2. Khi vật chỉ chịu tác dụng của lực F thì gia tốc mà vật thu được cùng hướng với F.",
+                "3. Khi vật chịu tác dụng của hai lực cân bằng thì gia tốc của vật thu được khác không.",
+                "4. Khi vật chịu tác dụng của nhiều lực thì gia tốc của vật thu được cùng hướng với lực tổng hợp tác dụng lên vật.",
+                "2, 4.",
+                "1, 3.",
+                "1, 4.",
+                "3, 4."
+            ],
+            correct: 0,
+            explain: "Nhận định (2) và (4) đúng theo nội dung Định luật II Newton."
+        },
+        {
+            q: "Câu 85. Que diêm cọ xát với bìa nhám của hộp diêm sinh nhiệt, làm chất hóa học ở đầu que diêm phát cháy. Trong trường hợp trên là ứng dụng của",
+            options: [
+                "lực ma sát.",
+                "lực căng dây.",
+                "trọng lực.",
+                "lực nâng."
+            ],
+            correct: 0,
+            explain: "Hiện tượng cọ xát làm xuất hiện lực ma sát trượt sinh nhiệt gây cháy."
+        },
+        {
+            q: "Câu 86. Một vật trượt có ma sát trên một mặt tiếp xúc nằm ngang. Nếu diện tích tiếp xúc của vật đó giảm 3 lần thì độ lớn lực ma sát trượt giữa vật và mặt tiếp xúc sẽ",
+            options: [
+                "giảm 3 lần.",
+                "tăng 3 lần.",
+                "giảm 6 lần.",
+                "không thay đổi."
+            ],
+            correct: 3,
+            explain: "Lực ma sát trượt không phụ thuộc vào diện tích tiếp xúc."
+        },
+        {
+            q: "Câu 87. Đối với lực ma sát nghỉ giữa hai bề mặt, phát biểu nào đúng?",
+            options: [
+                "Lực ma sát nghỉ luôn có độ lớn bằng μn.N.",
+                "Lực ma sát nghỉ có thể nhận các giá trị từ 0 đến giá trị cực đại μn.N tùy điều kiện cân bằng.",
+                "Lực ma sát nghỉ luôn nhỏ hơn lực ma sát trượt.",
+                "Lực ma sát nghỉ không phụ thuộc vào phản lực N."
+            ],
+            correct: 1,
+            explain: "Lực ma sát nghỉ có giá trị linh hoạt 0 ≤ Fmsn ≤ Fmsn_max = µn*N."
+        },
+        {
+            q: "Câu 88. Theo định luật III Newton, một cặp lực và phản lực có đặc điểm nào sau đây?",
+            options: [
+                "Cùng tác dụng lên một vật nên luôn triệt tiêu nhau.",
+                "Có cùng độ lớn, cùng chiều và tác dụng lên hai vật khác nhau.",
+                "Có cùng độ lớn, ngược chiều, cùng giá và tác dụng lên hai vật khác nhau.",
+                "Có thể có độ lớn khác nhau nếu hai vật có khối lượng khác nhau."
+            ],
+            correct: 2,
+            explain: "Cặp lực - phản lực cùng giá, cùng độ lớn, ngược chiều và đặt vào hai vật khác nhau."
+        },
+        {
+            q: "Câu 89. Vật m₁ = 4 kg nằm trên mặt bàn ngang có hệ số ma sát trượt μ = 0,20, nối qua ròng rọc nhẹ với vật treo m₂ = 3 kg. Dây nhẹ, không dãn. Lực căng dây khi hệ chuyển động là bao nhiêu?",
+            options: [
+                "18,0 N.",
+                "20,6 N.",
+                "22,0 N.",
+                "24,0 N."
+            ],
+            correct: 1,
+            explain: "Gia tốc a = (m2*g - µ*m1*g)/(m1 + m2) = (3*9.8 - 0.2*4*9.8)/7 = 3.08 m/s². Lực căng T = m2*(g - a) = 3*(9.8 - 3.08) ≈ 20.16 N (hoặc dùng g=10m/s²: a = 22/7 => T ≈ 20.6 N)."
+        },
+        {
+            q: "Câu 90. Một vật m = 4 kg đang chuyển động lên mặt phẳng nghiêng góc 37°. Hệ số ma sát trượt μ = 0,25. Vật chịu lực kéo F = 40 N hợp với mặt phẳng nghiêng góc 30°, hướng chếch ra khỏi mặt phẳng. Gia tốc của vật dọc theo mặt phẳng nghiêng gần nhất là bao nhiêu?",
+            options: [
+                "0,95 m/s².",
+                "1,91 m/s².",
+                "2,75 m/s².",
+                "3,50 m/s²."
+            ],
+            correct: 1,
+            explain: "Chiếu lên phương vuông góc: N = mg*cos37° - F*sin30° = 4*9.8*0.8 - 40*0.5 = 11.36 N. Fms = 0.25*11.36 = 2.84 N. Phương song song: F*cos30° - mg*sin37° - Fms = m*a => 40*0.866 - 4*9.8*0.6 - 2.84 = 4*a => a ≈ 1.91 m/s²."
+        },
+        {
+            q: "Câu 91. Một quả cầu gắn với sợi dây dài L = 1,0 m chuyển động như một con lắc hình nón, dây hợp với phương thẳng đứng góc 60°. Chu kỳ quay của quả cầu gần nhất là bao nhiêu?",
+            options: [
+                "0,99 s.",
+                "1,40 s.",
+                "1,99 s.",
+                "2,44 s."
+            ],
+            correct: 1,
+            explain: "Công thức chu kỳ con lắc hình nón: T = 2π*√(L*cosα / g) = 2π*√(1.0*cos60° / 9.8) ≈ 1.42 s (gần nhất với 1,40 s)."
+        },
+        {
+            q: "Câu 92. Theo định luật II Newton, gia tốc của một vật có khối lượng m chịu tác dụng của hợp lực F được xác định bởi",
+            options: [
+                "a = mF.",
+                "a = F/m.",
+                "a = m/F.",
+                "a = F – m ."
+            ],
+            correct: 1,
+            explain: "Công thức Định luật II Newton: a = F/m."
+        },
+        {
+            q: "Câu 93. Một vật có khối lượng 5 kg chịu tác dụng của hợp lực 20 N. Gia tốc của vật bằng",
+            options: [
+                "0,25 m/s².",
+                "4 m/s².",
+                "15 m/s².",
+                "100 m/s²."
+            ],
+            correct: 1,
+            explain: "a = F/m = 20 / 5 = 4 m/s²."
+        },
+        {
+            q: "Câu 94. Lực ma sát trượt giữa một vật và mặt phẳng nằm ngang có độ lớn được xác định bởi",
+            options: [
+                "Fms = μmg.",
+                "Fms = mg/μ.",
+                "Fms = μ/mg.",
+                "Fms = mg + μ."
+            ],
+            correct: 0,
+            explain: "Trên mặt phẳng ngang N = mg => Fms = µ*N = µ*mg."
+        },
+        {
+            q: "Câu 95. Một vật nằm yên trên mặt bàn nằm ngang. Các lực tác dụng lên vật cân bằng nhau. Theo định luật I Newton, vật sẽ",
+            options: [
+                "chuyển động nhanh dần đều.",
+                "chuyển động tròn đều.",
+                "tiếp tục đứng yên.",
+                "chuyển động thẳng đều với vận tốc tăng dần."
+            ],
+            correct: 2,
+            explain: "Vật đang đứng yên mà chịu lực cân bằng (hợp lực = 0) thì tiếp tục đứng yên."
+        },
+        {
+            q: "Câu 96. Theo định luật III Newton, lực và phản lực",
+            options: [
+                "cùng tác dụng lên một vật.",
+                "có cùng độ lớn, cùng phương, ngược chiều và tác dụng lên hai vật khác nhau.",
+                "có độ lớn khác nhau và tác dụng lên hai vật khác nhau.",
+                "luôn triệt tiêu nhau."
+            ],
+            correct: 1,
+            explain: "Lực và phản lực luôn cùng độ lớn, cùng phương, ngược chiều và đặt vào hai vật khác nhau."
         }
     ];
 
