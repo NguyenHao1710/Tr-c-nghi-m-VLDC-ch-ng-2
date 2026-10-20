@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Thi Trắc Nghiệm - Vật Lý Đại Cương 1 (Chương 2)</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+            --success-color: #16a34a;
+            --error-color: #dc2626;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .quiz-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+        .question-box {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .options-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+        .option-item {
+            background: #f1f5f9;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 16px;
+        }
+        .option-item:hover:not(.disabled) {
+            background: #e2e8f0;
+            border-color: var(--primary-color);
+        }
+        .option-item.selected {
+            border-color: var(--primary-color);
+            background: #eff6ff;
+        }
+        .option-item.correct {
+            background: #dcfce7 !important;
+            border-color: var(--success-color) !important;
+            color: #166534;
+        }
+        .option-item.incorrect {
+            background: #fee2e2 !important;
+            border-color: var(--error-color) !important;
+            color: #991b1b;
+        }
+        .option-item.disabled {
+            cursor: default;
+        }
+        .explanation {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            display: none;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #1e3a8a;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+        button:disabled {
+            background-color: #cbd5e1;
+            cursor: not-allowed;
+        }
+        .score-card {
+            text-align: center;
+            display: none;
+        }
+        .score-card h2 {
+            color: var(--primary-color);
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>VẬT LÝ ĐẠI CƯƠNG 1 - CƠ NHIỆT</h1>
+    <div class="subtitle">Chương 2: Động Lực Học Chất Điểm (Có Giải Chi Tiết)</div>
+
+    <div id="quiz-screen">
+        <div class="quiz-controls">
+            <span id="question-counter">Câu 1</span>
+            <span id="score-tracker">Điểm: 0</span>
+        </div>
+
+        <div class="question-box" id="question-text">Đang tải câu hỏi...</div>
+        
+        <ul class="options-list" id="options-container">
+            <!-- Các phương án -->
+        </ul>
+
+        <div class="explanation" id="explanation-box">
+            <strong>💡 Giải thích chi tiết:</strong> <span id="explanation-text"></span>
+        </div>
+
+        <div class="btn-container">
+            <button id="prev-btn" onclick="prevQuestion()" disabled>Câu trước</button>
+            <button id="next-btn" onclick="nextQuestion()" disabled>Câu tiếp theo</button>
+        </div>
+    </div>
+
+    <div class="score-card" id="score-card">
+        <h2>Hoàn thành bài ôn tập Chương 2!</h2>
+        <p id="final-score" style="font-size: 20px; margin: 20px 0;"></p>
+        <button onclick="restartQuiz()">Làm lại từ đầu</button>
+    </div>
+</div>
+
+<script>
+    const quizData = [
+        {
+            q: "Câu 1. Theo định luật I Newton, một vật sẽ giữ nguyên trạng thái đứng yên hoặc chuyển động thẳng đều khi:",
+            options: [
+                "không có lực nào tác dụng lên vật hoặc hợp lực tác dụng lên vật bằng 0.",
+                "lực tác dụng lên vật có độ lớn không đổi.",
+                "vật có khối lượng rất lớn.",
+                "vật chuyển động trong môi trường có ma sát nhỏ."
+            ],
+            correct: 0,
+            explain: "Định luật I Newton (Định luật quán tính) phát biểu rằng nếu một vật không chịu tác dụng của lực nào hoặc hợp lực tác dụng lên nó bằng 0 thì vật đang đứng yên sẽ tiếp tục đứng yên, vật đang chuyển động sẽ tiếp tục chuyển động thẳng đều."
+        },
+        {
+            q: "Câu 2. Đại lượng nào sau đây đặc trưng cho mức quán tính của một vật trong chuyển động tịnh tiến?",
+            options: [
+                "Vận tốc.",
+                "Gia tốc.",
+                "Khối lượng.",
+                "Trọng lực."
+            ],
+            correct: 2,
+            explain: "Khối lượng là đại lượng đặc trưng cho mức quán tính của vật. Khối lượng càng lớn thì vật càng khó thay đổi vận tốc (quán tính càng lớn)."
+        },
+        {
+            q: "Câu 3. Phát biểu nào sau đây đúng về cặp lực và phản lực trong Định luật III Newton?",
+            options: [
+                "Lực và phản lực cùng tác dụng vào một vật nên cân bằng nhau.",
+                "Lực và phản lực xuất hiện cùng lúc, cùng phương, ngược chiều và tác dụng vào hai vật khác nhau.",
+                "Lực xuất hiện trước, phản lực xuất hiện sau.",
+                "Lực và phản lực luôn có độ lớn khác nhau tùy thuộc vào khối lượng hai vật."
+            ],
+            correct: 1,
+            explain: "Theo định luật III Newton, lực và phản lực luôn xuất hiện đồng thời, cùng phương, ngược chiều, cùng độ lớn nhưng đặt vào hai vật khác nhau (không trực đối cân bằng)."
+        },
+        {
+            q: "Câu 4. Một vật khối lượng m trượt xuống một mặt phẳng nghiêng góc α so với phương ngang. Bỏ qua ma sát. Gia tốc của vật là:",
+            options: [
+                "a = g * sin(α).",
+                "a = g * cos(α).",
+                "a = g * tan(α).",
+                "a = g."
+            ],
+            correct: 0,
+            explain: "Thành phần trọng lực kéo vật trượt xuống theo mặt phẳng nghiêng là P_x = m*g*sin(α). Theo định luật II Newton: a = P_x / m = g*sin(α)."
+        },
+        {
+            q: "Câu 5. Lực ma sát trượt tác dụng lên vật trượt trên mặt phẳng ngang tỉ lệ thuận với đại lượng nào?",
+            options: [
+                "Vận tốc của vật.",
+                "Diện tích tiếp xúc.",
+                "Độ lớn áp lực (phản lực pháp tuyến) giữa hai bề mặt tiếp xúc.",
+                "Thời gian trượt."
+            ],
+            correct: 2,
+            explain: "Công thức lực ma sát trượt: F_mst = μ * N, trong đó N là áp lực (phản lực pháp tuyến). Độ lớn F_mst tỉ lệ thuận với N và không phụ thuộc vào diện tích tiếp xúc hay vận tốc."
+        },
+        {
+            q: "Câu 6. Khi xe ô tô rẽ ngoặt sang trái, hành khách trên xe có xu hướng nghiêng sang phải. Hiện tượng này giải thích do:",
+            options: [
+                "lực hấp dẫn của Trái Đất.",
+                "quán tính của cơ thể giữ hướng chuyển động cũ.",
+                "lực ma sát giữa người và ghế.",
+                "lực hướng tâm kéo người sang phải."
+            ],
+            correct: 1,
+            explain: "Do quán tính, cơ thể người có xu hướng tiếp tục chuyển động theo hướng thẳng ban đầu. Khi xe chuyển hướng sang trái, người bị nghiêng sang phải so với xe (hoặc do tác dụng của lực quán tính ly tâm trong hệ quy chiếu gắn với xe)."
+        },
+        {
+            q: "Câu 7. Độ biến thiên động lượng Δp của một chất điểm trong khoảng thời gian Δt bằng đại lượng nào sau đây?",
+            options: [
+                "Công của lực tác dụng.",
+                "Xung lượng của hợp lực tác dụng lên chất điểm trong khoảng thời gian đó (F * Δt).",
+                "Gia tốc của chất điểm.",
+                "Thế năng của chất điểm."
+            ],
+            correct: 1,
+            explain: "Theo dạng tổng quát của định luật II Newton: d p / dt = F hay Δp = F * Δt (Xung lượng của lực bằng độ biến thiên động lượng)."
+        },
+        {
+            q: "Câu 8. Một con lắc đơn chuyển động qua vị trí cân bằng (vị trí thấp nhất). Lực căng dây T tại vị trí này có đặc điểm gì?",
+            options: [
+                "T = m*g.",
+                "T < m*g.",
+                "T > m*g.",
+                "T = 0."
+            ],
+            correct: 2,
+            explain: "Tại vị trí cân bằng, hợp lực đóng vai trò lực hướng tâm: T - P = m*v²/l => T = m*g + m*v²/l > m*g."
+        },
+        {
+            q: "Câu 9. Hệ quy chiếu nào sau đây là hệ quy chiếu quán tính?",
+            options: [
+                "Hệ quy chiếu chuyển động quay đều.",
+                "Hệ quy chiếu gắn với một vật chuyển động thẳng đều hoặc đứng yên so với hệ quy chiếu quán tính khác.",
+                "Hệ quy chiếu chuyển động nhanh dần đều.",
+                "Hệ quy chiếu gắn với cabin thang máy rơi tự do."
+            ],
+            correct: 1,
+            explain: "Hệ quy chiếu quán tính là hệ quy chiếu đứng yên hoặc chuyển động thẳng đều so với một hệ quy chiếu quán tính đã chọn (trong đó định luật I Newton được nghiệm đúng)."
+        },
+        {
+            q: "Câu 10. Trong hệ quy chiếu phi quán tính chuyển động với gia tốc a_0, lực quán tính F_qt tác dụng lên chất điểm khối lượng m có công thức:",
+            options: [
+                "F_qt = m * a_0.",
+                "F_qt = -m * a_0.",
+                "F_qt = m * g.",
+                "F_qt = -m * g."
+            ],
+            correct: 1,
+            explain: "Lực quán tính xuất hiện trong hệ quy chiếu phi quán tính luôn ngược chiều với gia tốc a_0 của hệ quy chiếu và có độ lớn F_qt = -m * a_0."
+        }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+    let answered = false;
+
+    const questionCounter = document.getElementById("question-counter");
+    const scoreTracker = document.getElementById("score-tracker");
+    const questionText = document.getElementById("question-text");
+    const optionsContainer = document.getElementById("options-container");
+    const explanationBox = document.getElementById("explanation-box");
+    const explanationText = document.getElementById("explanation-text");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const quizScreen = document.getElementById("quiz-screen");
+    const scoreCard = document.getElementById("score-card");
+    const finalScore = document.getElementById("final-score");
+
+    function loadQuestion() {
+        answered = false;
+        explanationBox.style.display = "none";
+        nextBtn.disabled = true;
+        prevBtn.disabled = currentQuestion === 0;
+
+        const q = quizData[currentQuestion];
+        questionCounter.innerText = `Câu ${currentQuestion + 1} / ${quizData.length}`;
+        scoreTracker.innerText = `Điểm: ${score}`;
+        questionText.innerText = q.q;
+
+        optionsContainer.innerHTML = "";
+        q.options.forEach((opt, index) => {
+            const li = document.createElement("li");
+            li.className = "option-item";
+            li.innerText = opt;
+            li.onclick = () => selectOption(index, li);
+            optionsContainer.appendChild(li);
+        });
+    }
+
+    function selectOption(selectedIndex, element) {
+        if (answered) return;
+        answered = true;
+
+        const q = quizData[currentQuestion];
+        const options = optionsContainer.children;
+
+        if (selectedIndex === q.correct) {
+            element.classList.add("correct");
+            score++;
+        } else {
+            element.classList.add("incorrect");
+            options[q.correct].classList.add("correct");
+        }
+
+        for (let opt of options) {
+            opt.classList.add("disabled");
+        }
+
+        scoreTracker.innerText = `Điểm: ${score}`;
+        explanationText.innerText = q.explain;
+        explanationBox.style.display = "block";
+        nextBtn.disabled = false;
+    }
+
+    function nextQuestion() {
+        currentQuestion++;
+        if (currentQuestion < quizData.length) {
+            loadQuestion();
+        } else {
+            showScore();
+        }
+    }
+
+    function prevQuestion() {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            loadQuestion();
+        }
+    }
+
+    function showScore() {
+        quizScreen.style.display = "none";
+        scoreCard.style.display = "block";
+        finalScore.innerText = `Bạn đã trả lời đúng ${score} / ${quizData.length} câu. (Đạt ${(score/quizData.length*10).toFixed(1)} điểm)`;
+    }
+
+    function restartQuiz() {
+        currentQuestion = 0;
+        score = 0;
+        quizScreen.style.display = "block";
+        scoreCard.style.display = "none";
+        loadQuestion();
+    }
+
+    loadQuestion();
+</script>
+
+</body>
+</html>
